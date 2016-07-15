@@ -1,0 +1,54 @@
+﻿<Role xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a0fb46a5-bb1e-4bc2-bb98-6953ad7e783e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Role 2</ID>
+  <Name>Finance</Name>
+  <CreatedTimestamp>2010-05-03T19:17:42Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-09-20T14:41:53Z</LastSchemaUpdate>
+  <Description>Full access to all information</Description>
+  <Members>
+    <Member>
+      <Name>WMP\csardellitti</Name>
+    </Member>
+    <Member>
+      <Name>WMP\sstelter</Name>
+    </Member>
+    <Member>
+      <Name>WMP\cfoss</Name>
+    </Member>
+    <Member>
+      <Name>WMP\dfilarski</Name>
+    </Member>
+    <Member>
+      <Name>WMP\jmeyer</Name>
+    </Member>
+    <Member>
+      <Name>WMP\pmckissic</Name>
+    </Member>
+    <Member>
+      <Name>WMP\jbean</Name>
+    </Member>
+    <Member>
+      <Name>WMP\adunn</Name>
+    </Member>
+    <Member>
+      <Name>WMP\ccamino</Name>
+    </Member>
+    <Member>
+      <Name>WMP\nshaver</Name>
+    </Member>
+    <Member>
+      <Name>WMP\mhein</Name>
+    </Member>
+    <Member>
+      <Name>WMP\kmckown</Name>
+    </Member>
+    <Member>
+      <Name>WMP\zjones</Name>
+    </Member>
+    <Member>
+      <Name>WMP\ahaynes</Name>
+    </Member>
+    <Member>
+      <Name>WMP\kvandermyde</Name>
+    </Member>
+  </Members>
+</Role>

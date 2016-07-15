@@ -1,0 +1,16 @@
+﻿<Role xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b60db1bf-ff8b-428b-9bea-5f07623a8fc7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Role 17</ID>
+  <Name>US Corporate Office Lead</Name>
+  <CreatedTimestamp>2010-09-22T21:04:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-01-14T15:26:51Z</LastSchemaUpdate>
+  <Members>
+    <Member>
+      <Name>WMP\yleclerc</Name>
+      <Sid>S-1-5-21-1004336348-1993962763-1801674531-1654</Sid>
+    </Member>
+    <Member>
+      <Name>WMP\ybelanger</Name>
+      <Sid>S-1-5-21-1004336348-1993962763-1801674531-2289</Sid>
+    </Member>
+  </Members>
+</Role>

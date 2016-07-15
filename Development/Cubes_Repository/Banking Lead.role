@@ -1,0 +1,21 @@
+﻿<Role xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1eb25b4c-ff09-433a-8d07-abfbfd793e2c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Role 6</ID>
+  <Name>Banking Lead</Name>
+  <CreatedTimestamp>2010-05-03T19:17:41Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-08-22T14:27:29Z</LastSchemaUpdate>
+  <Description>Firm-wide leaders of the Banking solution area.</Description>
+  <Members>
+    <Member>
+      <Name>WMP\tbolger</Name>
+    </Member>
+    <Member>
+      <Name>WMP\gmermelstein</Name>
+    </Member>
+    <Member>
+      <Name>WMP\nhartman</Name>
+    </Member>
+    <Member>
+      <Name>WMP\rhinds</Name>
+    </Member>
+  </Members>
+</Role>

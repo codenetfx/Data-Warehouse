@@ -1,0 +1,145 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Reporting Currency 1</ID>
+  <Name>Reporting Currency</Name>
+  <CreatedTimestamp>2011-01-14T15:26:53Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-01-14T15:26:53Z</LastSchemaUpdate>
+  <LastProcessed>2011-06-23T16:52:45Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>WMP_REPO</DataSourceViewID>
+  </Source>
+  <Type>Currency</Type>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute>
+      <ID>CURRENCY CODE</ID>
+      <Name>CURRENCY CODE</Name>
+      <Type>CurrencyDestination</Type>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Reporting_x0020_Currency2</TableID>
+            <ColumnID>CURRENCY_CODE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Reporting_x0020_Currency2</TableID>
+          <ColumnID>CURRENCY_CODE</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>CURRENCY NAME</AttributeID>
+          <Name>CURRENCY NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>SOURCE CURRENCY</AttributeID>
+          <Name>SOURCE CURRENCY</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DESTINATION CURRENCY</AttributeID>
+          <Name>DESTINATION CURRENCY</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <DefaultMember>[Reporting Currency].[CURRENCY CODE].[CURRENCY CODE].&amp;[USD]</DefaultMember>
+      <IsAggregatable>false</IsAggregatable>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CURRENCY NAME</ID>
+      <Name>CURRENCY NAME</Name>
+      <Type>CurrencyName</Type>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Reporting_x0020_Currency2</TableID>
+            <ColumnID>CURRENCY_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Reporting_x0020_Currency2</TableID>
+          <ColumnID>CURRENCY_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>SOURCE CURRENCY</ID>
+      <Name>SOURCE CURRENCY</Name>
+      <Type>CurrencySource</Type>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Reporting_x0020_Currency2</TableID>
+            <ColumnID>SOURCE_CURRENCY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Reporting_x0020_Currency2</TableID>
+          <ColumnID>SOURCE_CURRENCY</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DESTINATION CURRENCY</ID>
+      <Name>DESTINATION CURRENCY</Name>
+      <Type>CurrencyDestination</Type>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>Reporting_x0020_Currency2</TableID>
+            <ColumnID>DESTINATION_CURRENCY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>Reporting_x0020_Currency2</TableID>
+          <ColumnID>DESTINATION_CURRENCY</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+</Dimension>

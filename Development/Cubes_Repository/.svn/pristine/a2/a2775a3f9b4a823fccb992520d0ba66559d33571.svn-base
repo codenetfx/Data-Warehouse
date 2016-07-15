@@ -1,0 +1,17 @@
+﻿<Role xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Role 1</ID>
+  <Name>Leadership</Name>
+  <CreatedTimestamp>2010-05-03T19:17:42Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-01-14T15:26:50Z</LastSchemaUpdate>
+  <Description>Full access to all metrics and KPIs in the cube.</Description>
+  <Members>
+    <Member>
+      <Name>WMP\dfischer</Name>
+      <Sid>S-1-5-21-1004336348-1993962763-1801674531-1147</Sid>
+    </Member>
+    <Member>
+      <Name>WMP\hkay</Name>
+      <Sid>S-1-5-21-1004336348-1993962763-1801674531-3703</Sid>
+    </Member>
+  </Members>
+</Role>

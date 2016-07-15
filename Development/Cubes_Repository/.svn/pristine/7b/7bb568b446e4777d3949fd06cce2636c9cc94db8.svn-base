@@ -1,0 +1,1072 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d4e6e200-bac6-47cb-a2ff-d7ebf2dc9987" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>PROJECTS_DIM</ID>
+  <Name>PROJECT TASKS</Name>
+  <CreatedTimestamp>2010-05-03T19:17:50Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-03-14T18:32:24Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-748" scrolltop="-5080" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8943" y="16563" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="PROJECT_TASKS_VW" left="20" top="-2911" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5503" height="7911" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800007f150000e71e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_PROJECTS_VW" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-748</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5080</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-2911</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="186">
+            <Shape Id="PROJECT TASK ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="PROJECT TASK ID" />
+                <Attribute Id="PROJECT TASK TYPE NAME" />
+                <Attribute Id="DUE DATE" />
+                <Attribute Id="TASK HOURS" />
+                <Attribute Id="TASK REVISED HOURS" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="PROJECT TASK NAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="PROJECT TASK NAME" />
+              </Attributes>
+              <Position x="257" y="20" />
+            </Shape>
+            <Shape Id="PROJECT NAME" Expanded="true">
+              <Attributes>
+                <Attribute Id="PROJECT NAME" />
+                <Attribute Id="INDUSTRY NAME" />
+                <Attribute Id="PROJECT ID" />
+                <Attribute Id="PROJECT TYPE NAME" />
+              </Attributes>
+              <Position x="495" y="20" />
+            </Shape>
+            <Shape Id="SOLUTION AREA NAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="SOLUTION AREA NAME" />
+              </Attributes>
+              <Position x="732" y="20" />
+            </Shape>
+            <Shape Id="SERVICE LINE NAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="SERVICE LINE NAME" />
+              </Attributes>
+              <Position x="732" y="68" />
+            </Shape>
+            <Shape Id="OFFICE NAME" Expanded="true">
+              <Attributes>
+                <Attribute Id="OFFICE NAME" />
+                <Attribute Id="OFFICE MNGR USERNAME" />
+              </Attributes>
+              <Position x="732" y="116" />
+            </Shape>
+            <Shape Id="CLIENT NAME" Expanded="true">
+              <Attributes>
+                <Attribute Id="CLIENT NAME" />
+              </Attributes>
+              <Position x="732" y="164" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2011-09-26T10:09:58Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c21932ca-184a-46ee-b4ca-ae6e30910fe5">
+    <DataSourceViewID>WMP_REPO</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="1bae90ac-dd9d-4165-88e7-984c3baba903">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="28b9fa6b-c2a6-4087-a4e2-ec9f4e893142">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>2010-05-03T19:17:51Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:24Z</LastSchemaUpdate>
+      <RoleID>Role 4</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="96ffb2b7-fa7a-4ee2-be46-1c3a517978b5">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e6002056-5896-4cad-aedc-55bed4aa5382">
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>2010-05-03T19:17:51Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:24Z</LastSchemaUpdate>
+      <RoleID>Role 5</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="81524abd-2829-4fd0-a4d9-3f9efefec289">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[CDN National]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="13537ed1-fe8d-4e11-97f2-d8b179f82600">
+      <ID>DimensionPermission 4</ID>
+      <Name>DimensionPermission 4</Name>
+      <CreatedTimestamp>2010-05-03T19:17:52Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:24Z</LastSchemaUpdate>
+      <RoleID>Role 7</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="99b5dabd-c9f5-4d77-a847-763b0f8fac87">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="9bf6c886-d21c-4fb0-b6ff-0053eb768ae1">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Operations Excellence]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="41b95ee4-af72-4ad2-925d-b220aadaf946">
+      <ID>DimensionPermission 5</ID>
+      <Name>DimensionPermission 5</Name>
+      <CreatedTimestamp>2010-05-03T19:17:52Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:24Z</LastSchemaUpdate>
+      <RoleID>Chicago Customer Lead</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="0d1018cf-280b-4121-aa1a-891d06011816">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Customer Experience]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="6a08b5ea-2832-433b-8a9e-b600e945d10e">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="f97a2386-1352-4888-9203-7fa0e72f63af">
+      <ID>DimensionPermission 6</ID>
+      <Name>DimensionPermission 6</Name>
+      <CreatedTimestamp>2010-05-03T19:17:52Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:24Z</LastSchemaUpdate>
+      <RoleID>Columbus Office Lead</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="aa97c664-5fe5-4682-b84d-ced1eae06950">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[CDN National], [PROJECT TASKS].[PROJECT OFFICE].&amp;[Columbus], [PROJECT TASKS].[PROJECT OFFICE].&amp;[US National], [PROJECT TASKS].[PROJECT OFFICE].&amp;[US Products]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="99ac8040-bb68-495a-8c19-4c1a098e9b79">
+      <ID>DimensionPermission 7</ID>
+      <Name>DimensionPermission 7</Name>
+      <CreatedTimestamp>2010-05-03T19:17:53Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:24Z</LastSchemaUpdate>
+      <RoleID>US National Office Lead</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="b9ed10a8-d573-4f57-b610-cba21ec69631">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[US National]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="d1266f6a-4a4e-4c48-a694-83d8397ac8d2">
+      <ID>DimensionPermission 8</ID>
+      <Name>DimensionPermission 8</Name>
+      <CreatedTimestamp>2010-05-03T19:17:53Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:24Z</LastSchemaUpdate>
+      <RoleID>Role 8</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="a72bae5e-b21e-4a30-8a1a-925314002191">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Seattle]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="6a9910be-d8d4-471a-ae25-105694dd21fc">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>2010-05-03T19:17:53Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:24Z</LastSchemaUpdate>
+      <RoleID>Role 3</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="86bb4546-c08f-447a-9ee0-ce9defc66307">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Montreal]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="ec654d17-8ae0-4b31-906a-f29cc22553ff">
+      <ID>DimensionPermission 10</ID>
+      <Name>DimensionPermission 10</Name>
+      <CreatedTimestamp>2010-05-03T19:17:54Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 10</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="f37f39b4-2e09-416a-bef3-e4dc4d044949">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Toronto]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="f9ecb29d-541b-40c7-b821-2a1f2202ab8b">
+      <ID>DimensionPermission 3</ID>
+      <Name>DimensionPermission 3</Name>
+      <CreatedTimestamp>2010-05-03T19:17:54Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 6</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="e797a556-c664-448f-bb6b-5a301e01b6d2">
+          <AttributeID>OFFICE NAME</AttributeID>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="76287923-3557-4c9d-9626-a2e677317e03">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <VisualTotals>1</VisualTotals>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="4e36c07b-9d8a-46c5-8d61-5282084179e6">
+          <AttributeID>INDUSTRY NAME</AttributeID>
+          <VisualTotals>1</VisualTotals>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="1519b7d7-cbf4-4a8c-b4c1-22afff6a63ec">
+          <AttributeID>CLIENT FOR LIFE</AttributeID>
+          <VisualTotals>1</VisualTotals>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="8fa6db0f-0cd2-4c0d-89b2-4cd1d158dd21">
+          <AttributeID>CLIENT NAME</AttributeID>
+          <VisualTotals>1</VisualTotals>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="6573aa16-d035-4c18-af88-87a7a1d95b91">
+          <AttributeID>PROJECT NAME</AttributeID>
+          <VisualTotals>1</VisualTotals>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="027b98e8-3e67-44a4-91ff-1403ca8e00c1">
+          <AttributeID>PROJECT ID</AttributeID>
+          <VisualTotals>1</VisualTotals>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="732580db-5660-4550-8314-9bd5bf507af7">
+      <ID>DimensionPermission 9</ID>
+      <Name>DimensionPermission 9</Name>
+      <CreatedTimestamp>2010-05-03T19:17:54Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 9</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="4a9a0932-8947-43d8-a242-d09c211a1b50">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[US Products]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="da3b308f-8e4a-47ac-ae40-aaa3fd78c553">
+      <ID>DimensionPermission 11</ID>
+      <Name>DimensionPermission 11</Name>
+      <CreatedTimestamp>2010-05-25T01:09:04Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 11</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="66f34151-016f-4835-bc98-723b597c4795">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Healthcare - Payer]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="9be3cbc1-6b92-4dac-a961-dcf06d8cf777">
+      <ID>DimensionPermission 12</ID>
+      <Name>DimensionPermission 12</Name>
+      <CreatedTimestamp>2010-05-25T01:17:18Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 12</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="6d655053-c43b-43d6-8e7b-d73d464e1f72">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Capital Markets], [PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Private Equity]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="3f889658-e355-4e0c-811c-7614f7fd942c">
+      <ID>DimensionPermission 13</ID>
+      <Name>DimensionPermission 13</Name>
+      <CreatedTimestamp>2010-05-25T01:19:31Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 13</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="b651ae5e-3d13-41ce-b570-abf24b8fa1be">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Energy &amp; Utilities]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e1071399-bcb0-41c1-ba60-a90823c0f42e">
+      <ID>DimensionPermission 14</ID>
+      <Name>DimensionPermission 14</Name>
+      <CreatedTimestamp>2010-05-25T01:23:59Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 14</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="6f496061-a4c0-4d02-8327-f19025441b64">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="da8cdf4e-23c9-4003-a389-f2dce187bf40">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Infrastructure &amp; Operations]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e4acae3c-d8fb-48f0-9f1c-71201d285fcd">
+      <ID>DimensionPermission 15</ID>
+      <Name>DimensionPermission 15</Name>
+      <CreatedTimestamp>2010-05-25T01:26:29Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 15</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="291f3834-b37f-4bd0-a57d-a5f2d31d3157">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="55337489-50db-483c-998c-0b7273bef6dc">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Managed Services], [PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Products]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="0fd07b5d-5f0b-445a-a3be-1584ba7d417b">
+      <ID>DimensionPermission 16</ID>
+      <Name>DimensionPermission 16</Name>
+      <CreatedTimestamp>2010-05-25T01:28:22Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 16</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="3673754c-aff0-44d0-af9a-926152d5531f">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="5e67f1a8-ac6a-43e9-9b98-e17181e8d778">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Technology Integration]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="fbfa6dd9-43fd-4b54-8086-922938e854b2">
+      <ID>DimensionPermission 17</ID>
+      <Name>DimensionPermission 17</Name>
+      <CreatedTimestamp>2011-01-14T15:26:53Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 17</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="bc52b6f3-2ac2-4d42-9c05-77f6979623ef">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[US Corporate]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="d6239d19-e3b6-4151-a20e-b76bb466f7a5">
+      <ID>DimensionPermission 18</ID>
+      <Name>DimensionPermission 18</Name>
+      <CreatedTimestamp>2011-01-26T17:41:17Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 18</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="5f06606b-dcb1-4852-b2fe-491f97acec8c">
+          <AttributeID>CLIENT NAME</AttributeID>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="45e2ec24-3f52-412b-84f8-26bf5b58e74a">
+          <AttributeID>PROJECT ID</AttributeID>
+          <AllowedSet>Exists([PROJECT TASKS].[PROJECT ID].members, STRTOMEMBER( "[EMPLOYEES].[USERNAME].["+ Trim(Mid( UserName, InStr(1, UserName, "\") + 1, 128 ) + "]")), "PM Security VW" )</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="66e40a8f-f92d-4f38-b2f4-99874f7a05d6">
+      <ID>DimensionPermission 19</ID>
+      <Name>DimensionPermission 19</Name>
+      <CreatedTimestamp>2011-02-03T19:59:05Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-03-14T18:32:25Z</LastSchemaUpdate>
+      <RoleID>Role 19</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="4ed7bcde-e5ea-47c9-bcb8-a56e94ec8547">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="862c0f75-d2c5-4788-bb1d-1ef3c876e6b9">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[New York]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="d9df9265-58b0-420f-a235-db8ce9f4c791">
+      <ID>DimensionPermission 20</ID>
+      <Name>DimensionPermission 20</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 20</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="02c10707-283d-4628-af61-70a6ea1143af">
+          <AttributeID>CLIENT FOR LIFE</AttributeID>
+          <AllowedSet>{}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="6ecd31b5-3b9f-4153-b842-d3056246d5a4">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Insurance]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e89b978a-24e9-4312-bf2a-3e546a3612a8">
+      <ID>DimensionPermission 21</ID>
+      <Name>DimensionPermission 21</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 21</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="79e4234a-78f0-4eb5-9ee1-80f7d2bdbff5">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Healthcare - Provider]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="61cf71e3-badd-43f0-92a1-07ea3727ee72">
+      <ID>DimensionPermission 22</ID>
+      <Name>DimensionPermission 22</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 22</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="9d866b52-38b4-4bac-a9a6-a7cc6dc1bb7c">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="3a878148-a79c-4a42-a8b8-255038e37f66">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Manufacturing &amp; Distribution]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="966a37a4-cf27-490c-9aa3-073f7854b9d8">
+      <ID>DimensionPermission 23</ID>
+      <Name>DimensionPermission 23</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 23</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="7a3be91e-8944-4f9d-b425-50e4d6812450">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="a3459beb-e05d-4757-a600-a5085661d2c5">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Capital Markets]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="792199d9-afac-4930-b67d-e2fcd6a03379">
+      <ID>DimensionPermission 24</ID>
+      <Name>DimensionPermission 24</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 24</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="94b3137e-4272-4a65-bf74-5894976075d3">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[PROJECT OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="0aa3774d-7229-4a07-91af-5fce799d9ce2">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[PROJECT TASKS].[SOLUTION AREA NAME].&amp;[Supply Chain Management]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="78b6e445-ad39-4a9e-a94a-5cca82dcb2ef">
+      <ID>PROJECT ID</ID>
+      <Name>PROJECT ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c26b3039-c77d-4d8a-8444-442ef63dc095">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e927c0cf-d06c-4615-a6e9-cb71cfd0cae8">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>PROJECT_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3a9cc060-3ce8-4e5d-af30-a8d821edaecb">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bf8c9258-9a9a-4c0f-b595-819264b1a7e1">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>PROJECT_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9b547849-429d-4adf-9440-1a2365618726">
+      <ID>INDUSTRY NAME</ID>
+      <Name>INDUSTRY NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="599b2891-0116-4dbe-a519-5bc780b5b467">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="57573118-787e-4e1c-a512-973432e5d69c">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>INDUSTRY_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d0a0163d-302c-4389-9f7c-9d1e3cc42e4d">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5a6d04b4-6947-418c-97a9-71faeda69bc9">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>INDUSTRY_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7570ae22-4d82-4678-9713-8df3399f43dd">
+      <ID>CLIENT NAME</ID>
+      <Name>CLIENT NAME</Name>
+      <EstimatedCount>1134</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="335f09da-dd73-4eea-8942-cfc0027e51f2">
+          <DataType>WChar</DataType>
+          <DataSize>256</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51923c37-8fcd-450d-b6ea-6eb144ed8443">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>CLIENT_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="70168f79-a03a-4a95-9bc2-4ad4c549b79e">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="be341b27-4130-42dc-9c8d-5db6a672e947">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>CLIENT_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ac2f5032-6712-4016-b2db-0c1b8ab9a298">
+      <ID>OFFICE NAME</ID>
+      <Name>PROJECT OFFICE</Name>
+      <EstimatedCount>11</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33287eef-0a0a-4580-ab53-536b4261ed03">
+          <DataType>WChar</DataType>
+          <DataSize>256</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff9056f9-943e-46de-8745-4695dc67b656">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>OFFICE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ec219f0d-f2cf-4aed-9d7d-9753f2b2ebc5">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6302717c-7aaa-45b1-b699-e3a13425c609">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>OFFICE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="8b6c31b8-19f6-46e1-a506-03e2cbbcfce7">
+          <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+          <Name>OFFICE MNGR USERNAME</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6328fb1b-99d5-4b97-8117-f557c76d322a">
+      <ID>SOLUTION AREA NAME</ID>
+      <Name>SOLUTION AREA NAME</Name>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0793a97-df1b-46f3-b1a3-b02d3e61ac02">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="91d19524-fafc-4c8e-88b1-19a96d768123">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>SOLUTION_AREA_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="04bb4467-0c35-44f6-8c26-57e1462f579d">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9c648c4d-2b53-493d-8edb-23d8d357eecd">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>SOLUTION_AREA_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="22c9b0b7-56a7-441c-b602-ed621f58ef73">
+      <ID>PROJECT TYPE NAME</ID>
+      <Name>PROJECT TYPE NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4de5bfe6-1809-427c-9699-34e65190e1c4">
+          <DataType>WChar</DataType>
+          <DataSize>256</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a270494-51a7-45aa-85f0-05853d8d0667">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>PROJECT_TYPE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="85fec3f7-be9b-41d2-9454-89cb7a43e05d">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="aadec96d-6d7a-45cd-bc9f-9a700e3828be">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>PROJECT_TYPE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a38411b8-ec76-47ad-9448-4cc22beb8b59">
+      <ID>PROJECT TASK TYPE NAME</ID>
+      <Name>PROJECT TASK TYPE NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e9b794de-bee9-4518-bb4f-781df8bfe8a3">
+          <DataType>WChar</DataType>
+          <DataSize>75</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3feed63f-980c-4530-9dcd-3642710bd7b3">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>PROJECT_TASK_TYPE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a8405a3e-52e5-4d8b-a186-d329b5ad0dcf">
+        <DataType>WChar</DataType>
+        <DataSize>75</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="741ffbf8-6059-4781-8487-fb8a6727fc24">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>PROJECT_TASK_TYPE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5da69e8b-af51-4060-8ca1-31b605f74a3f">
+      <ID>PROJECT TASK NAME</ID>
+      <Name>PROJECT TASK NAME</Name>
+      <EstimatedCount>24804</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae59f1be-e794-48df-ac3b-71beae038ae3">
+          <DataType>WChar</DataType>
+          <DataSize>75</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5424c33-d9f1-4314-a0eb-de5aa27b2ea9">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>PROJECT_TASK_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5909ec83-26e5-488d-a1bd-76d9847bb63c">
+        <DataType>WChar</DataType>
+        <DataSize>75</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d8cc5e50-d581-4fad-a08d-4a67205d2e6d">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>PROJECT_TASK_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fe0660ad-71ca-44e0-84fc-a74cb269601f">
+      <ID>DUE DATE</ID>
+      <Name>TASK DUE DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="43b9e49c-6f51-4cb4-943e-87e301c48c56">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9cb2934e-e344-45e8-b5fa-c6fd89fc97b7">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>DUE_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e25292f2-687e-45b9-ad2a-29f16fc304d0">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="93c275be-a817-4b6c-bba6-b958493f800d">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>DUE_DATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="39402a36-367e-4b98-913d-d9177dca9736">
+      <ID>TASK HOURS</ID>
+      <Name>TASK HOURS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e1663318-c63c-4950-b110-b9c8a77866bf">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b39b823e-195e-45ec-a029-421bd42b17f0">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>TASK_HOURS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c5807521-8e3b-4a7d-9927-571236be094f">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c9b47459-2caf-41e2-b261-8bf0f0336e71">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>TASK_HOURS</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="317c8ecd-f51c-4253-9e11-d4bf828ec5fb">
+      <ID>TASK REVISED HOURS</ID>
+      <Name>TASK REVISED HOURS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="32c46123-cf0c-4668-984f-17a1eaa499d5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c862a785-5338-4793-980a-7d7efb3fa3ea">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>TASK_REVISED_HOURS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="57dc1748-6327-43af-bcd1-5e36514f7603">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4bc77d44-b065-4537-b5af-ae6ad41bb058">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>TASK_REVISED_HOURS</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4ccca667-34a2-43a4-97e7-2c85023a63ef">
+      <ID>PROJECT TASK ID</ID>
+      <Name>PROJECT TASK ID</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>29685</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ae64152-6b36-4436-b6ee-7acfdd385c11">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a820fcb-b326-4856-9ce1-80249d6b85b9">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>PROJECT_TASK_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4a305526-694e-4f7d-bcf2-eef8ff71b3a5">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fd9e54b3-4b05-440b-abc7-94f9c0195ff5">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>PROJECT_TASK_ID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="346baea6-0753-4c4a-934c-ba77e10d1646">
+          <AttributeID>TASK REVISED HOURS</AttributeID>
+          <Name>TASK REVISED HOURS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6cc45761-7fb3-4159-b229-5a77cc92d607">
+          <AttributeID>TASK HOURS</AttributeID>
+          <Name>TASK HOURS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="24c9bfd7-5964-4e1d-9892-5b58cf65316e">
+          <AttributeID>PROJECT TASK TYPE NAME</AttributeID>
+          <Name>PROJECT TASK TYPE NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7db350ed-7010-4d96-b1c0-a9b35d892aee">
+          <AttributeID>DUE DATE</AttributeID>
+          <Name>TASK DUE DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b0a810b-3cba-477e-bc3f-fa56b52df8d3">
+          <AttributeID>PROJECT NAME</AttributeID>
+          <Name>PROJECT NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="52f733f1-403f-443a-b126-e73960cb2cf6">
+          <AttributeID>PROJECT TASK NAME</AttributeID>
+          <Name>PROJECT TASK NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8d16a490-2456-4f6a-8e00-a309474041be">
+          <AttributeID>CLIENT FOR LIFE</AttributeID>
+          <Name>CLIENT FOR LIFE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="55ae9765-bef5-4991-a165-c686d071d600">
+          <AttributeID>FEE STRUCTURE NAME</AttributeID>
+          <Name>FEE STRUCTURE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c5bee740-406b-47a4-bdb9-3917ba66f964">
+          <AttributeID>CRITERIA NAME</AttributeID>
+          <Name>PROJECT CRITERIA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="318d734c-f553-48ba-9111-35c2fc1c2c45">
+          <AttributeID>OFFERING NAME</AttributeID>
+          <Name>FUNCTIONAL OFFERING</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="12ec380a-c6db-4f36-8c0b-09ca76a55f39">
+      <ID>PROJECT NAME</ID>
+      <Name>PROJECT NAME</Name>
+      <EstimatedCount>3836</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="94288073-2769-4192-a84b-8f4221852ad0">
+          <DataType>WChar</DataType>
+          <DataSize>256</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b16d8684-b5ed-4d70-9dbb-c17900edc844">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>PROJECT_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bd2365d8-7617-4850-b0b8-feb74b91a6ec">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="40cdde74-3a2e-4951-9a1a-9afe6dd9cebf">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>PROJECT_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="45e621c1-0a4d-4778-b09a-08d90adda5b2">
+          <AttributeID>PROJECT ID</AttributeID>
+          <Name>PROJECT ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1fcc0bba-9a79-40db-8813-5cb0bf98d75e">
+          <AttributeID>PROJECT TYPE NAME</AttributeID>
+          <Name>PROJECT TYPE NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0e7added-e43b-4a99-8d54-4f4e8d897103">
+          <AttributeID>CLIENT NAME</AttributeID>
+          <Name>CLIENT NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d28bcc4d-f706-4ab4-bf43-173e1eb58e83">
+          <AttributeID>INDUSTRY NAME</AttributeID>
+          <Name>INDUSTRY NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8f78c438-bc59-480d-b93e-07b50018a30d">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <Name>PROJECT OFFICE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ebf8fc1-47ab-4394-821d-72fbe14c1eb2">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <Name>SOLUTION AREA NAME</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ebc786b9-4b9e-420d-87e5-323d8d6d9531">
+      <ID>OFFICE MNGR USERNAME</ID>
+      <Name>OFFICE MNGR USERNAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f8f44a23-136c-40ae-a930-e13367032b92">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ef805d2-882a-4260-a046-7ec866bae24a">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>OFFICE_MNGR_USERNAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9310384f-a312-4b51-9dee-cfdd45f01d0f">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="30f13bc4-efd0-4f76-a7b1-28c009472656">
+          <TableID>dbo_PROJECTS_VW</TableID>
+          <ColumnID>OFFICE_MNGR_USERNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="04239660-ee6e-44e3-a2f4-72955cd40272">
+      <ID>CLIENT FOR LIFE</ID>
+      <Name>CLIENT FOR LIFE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="93df7b71-b6db-4bac-9253-92c22978806f">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c87d23fa-a660-48b1-b0d1-f61b9c7374e2">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>CLIENT_FOR_LIFE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f20d8fd7-46be-4cce-92a9-ac77309b8c20">
+      <ID>FEE STRUCTURE NAME</ID>
+      <Name>FEE STRUCTURE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c12e32f2-1c3b-4b5f-a9b5-051a363bd08b">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbbb26cb-0408-43be-8ba2-2a7890de061c">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>FEE_STRUCTURE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="948e8a3c-28c5-4975-b4a4-f7344c90e9a5">
+      <ID>CRITERIA NAME</ID>
+      <Name>PROJECT CRITERIA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2465addd-9a3b-466d-9f17-d0fa103e8737">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="38cd300b-34cd-4bb2-a081-74c543f24122">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>CRITERIA_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5b1e1177-c557-493d-854c-c63d513b9556">
+      <ID>OFFERING NAME</ID>
+      <Name>FUNCTIONAL OFFERING</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a27173ea-546e-40d8-b9ad-d5b75a01ee82">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="71d91ff3-f64e-4942-be69-de685f10a6eb">
+            <TableID>dbo_PROJECTS_VW</TableID>
+            <ColumnID>OFFERING_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="2ac6d6de-2d10-4327-af18-2463741f5253">
+      <ID>Hierarchy</ID>
+      <Name>CLIENT PROJECT TASKS</Name>
+      <Levels>
+        <Level dwd:design-time-name="6bfb19df-09b9-4815-af93-39c93ce7ef19">
+          <ID>CLIENT NAME</ID>
+          <Name>CLIENT</Name>
+          <SourceAttributeID>CLIENT NAME</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a0125dac-d0ce-4405-951d-ab20144f571a">
+          <ID>PROJECT NAME</ID>
+          <Name>PROJECT</Name>
+          <SourceAttributeID>PROJECT NAME</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c5050e33-6578-4ec8-834a-503952bc00e4">
+          <ID>PROJECT TASK NAME</ID>
+          <Name>PROJECT TASK</Name>
+          <SourceAttributeID>PROJECT TASK NAME</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="c84965d8-1d0e-4bc2-ac69-be7aaab8c072">
+      <ID>Hierarchy 1</ID>
+      <Name>OFFICE SOLUTION AREAS</Name>
+      <Levels>
+        <Level dwd:design-time-name="b9b99bd2-8fdc-45b2-ba50-1bf4fa09541e">
+          <ID>OFFICE NAME</ID>
+          <Name>PROJECT OFFICE</Name>
+          <SourceAttributeID>OFFICE NAME</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a514befe-ec78-475f-872c-31572b1e105f">
+          <ID>SOLUTION AREA NAME</ID>
+          <Name>SOLUTION AREA</Name>
+          <SourceAttributeID>SOLUTION AREA NAME</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="38d82f59-916f-4a1e-8bb3-6ffcd4c08aa3">
+          <ID>PROJECT NAME</ID>
+          <Name>PROJECT</Name>
+          <SourceAttributeID>PROJECT NAME</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="31c26000-4420-49d8-8eeb-210d063e8807">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="2a420932-d6b6-451f-a1ce-1f988d35b22e" />
+  </ProactiveCaching>
+</Dimension>

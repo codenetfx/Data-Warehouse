@@ -1,0 +1,14 @@
+﻿<Role xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="56c4759d-c0f1-45e2-b42a-18f845e227dc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Chicago Customer Lead</ID>
+  <Name>Chicago Customer Lead</Name>
+  <CreatedTimestamp>2010-05-03T19:17:41Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-01-14T15:26:50Z</LastSchemaUpdate>
+  <Members>
+    <Member>
+      <Name>WMP\darmstrong</Name>
+    </Member>
+    <Member>
+      <Name>WMP\dtilson</Name>
+    </Member>
+  </Members>
+</Role>

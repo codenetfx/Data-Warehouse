@@ -1,0 +1,4617 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2ac34433-102f-42e2-a2fe-c61cc63753c7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>WMP PROJECTS</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>PROJECT MEASURES VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="509d5ab1-57fd-49b0-8fb7-a6acf21f4e64">
+          <ID>PROJECT MEASURES VW</ID>
+          <Name>PROJECT MEASURES VW</Name>
+          <CreatedTimestamp>2010-05-03T19:17:57Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:14Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:13:10Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1586ea78-0d80-4d39-824e-571c1ff61e79">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_PROJECT_MEASURES_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="91c60122-8f7b-4cf7-a11a-4dec0b9c0b4b">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d372fbe8-f959-4471-8bc8-5cdca1c5f125" />
+          </ProactiveCaching>
+          <EstimatedSize>493789</EstimatedSize>
+          <EstimatedRows>4426</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2010-05-03T19:17:57Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:14Z</LastSchemaUpdate>
+          <EstimatedRows>4426</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>PROJECTS</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                  <EstimatedCount>4426</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1206</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT STATUS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Project Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QA Reviewer</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Engagement Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Relationship Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Technical Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year Last Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Last Time Entry</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>TIME_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>THE DATE</AttributeID>
+                  <EstimatedCount>3654</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF WEEK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF PERIOD</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEKEND FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>HOLIDAY FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST PERIOD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YTD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LTM FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD ID</AttributeID>
+                  <EstimatedCount>184</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FUTURE DATE FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT YEAR FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PREVIOUS MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURR PERIOD FLG</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>PROJECT TASK MEASURES VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="dd13f03a-c8f7-499b-8178-5bd6da363544">
+          <ID>PROJECT TASK MEASURES VW</ID>
+          <Name>PROJECT TASK MEASURES VW</Name>
+          <CreatedTimestamp>2010-05-03T19:17:56Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:14Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:12:23Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0418ef64-30ab-4295-b507-f926c9832815">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_PROJECT_TASK_MEASURES_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="7438ff87-4b51-44f8-9c5f-4177d1f3da9b">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="c8a1f094-f986-40eb-956c-4c5b0ee25cde" />
+          </ProactiveCaching>
+          <EstimatedSize>61963743</EstimatedSize>
+          <EstimatedRows>381964</EstimatedRows>
+          <AggregationDesignID>AggregationDesign 1</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2010-05-03T19:17:56Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:14Z</LastSchemaUpdate>
+          <EstimatedRows>381964</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>TIME_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>THE DATE</AttributeID>
+                  <EstimatedCount>3654</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF WEEK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF PERIOD</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEKEND FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>HOLIDAY FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST PERIOD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YTD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LTM FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD ID</AttributeID>
+                  <EstimatedCount>184</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FUTURE DATE FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT YEAR FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PREVIOUS MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURR PERIOD FLG</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>EMPLOYEE CAREER LEVEL ID</AttributeID>
+                  <EstimatedCount>2100</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>BILLING RATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREEL LEVEL START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREER LEVEL END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FIRST NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MIDDLE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>STATUS NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYMENT START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYMENT END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FULL WEEK FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREER LEVEL NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FULL NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LINE PERSON 1</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYEE ID</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1134</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TASK TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TASK NAME</AttributeID>
+                  <EstimatedCount>24804</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DUE DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TASK HOURS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TASK REVISED HOURS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TASK ID</AttributeID>
+                  <EstimatedCount>29685</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                  <EstimatedCount>3836</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>PROJECTS</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                  <EstimatedCount>4426</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1206</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT STATUS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Project Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QA Reviewer</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Engagement Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Relationship Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Technical Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year Last Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Last Time Entry</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+        <AggregationDesign>
+          <ID>AggregationDesign 1</ID>
+          <Name>AggregationDesign 1</Name>
+          <CreatedTimestamp>2010-05-03T19:17:56Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:14Z</LastSchemaUpdate>
+          <EstimatedRows>381964</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>TIME_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>THE DATE</AttributeID>
+                  <EstimatedCount>3654</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF WEEK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF PERIOD</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEKEND FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>HOLIDAY FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST PERIOD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YTD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LTM FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD ID</AttributeID>
+                  <EstimatedCount>184</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FUTURE DATE FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT YEAR FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PREVIOUS MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURR PERIOD FLG</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>EMPLOYEE CAREER LEVEL ID</AttributeID>
+                  <EstimatedCount>2100</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>BILLING RATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREEL LEVEL START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREER LEVEL END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FIRST NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MIDDLE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>STATUS NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYMENT START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYMENT END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FULL WEEK FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREER LEVEL NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FULL NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LINE PERSON 1</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYEE ID</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1134</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TASK TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TASK NAME</AttributeID>
+                  <EstimatedCount>24804</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DUE DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TASK HOURS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TASK REVISED HOURS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TASK ID</AttributeID>
+                  <EstimatedCount>29685</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                  <EstimatedCount>3836</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>PROJECTS</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                  <EstimatedCount>4426</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1206</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT STATUS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Project Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QA Reviewer</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Engagement Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Relationship Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Technical Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year Last Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Last Time Entry</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>PROJECT TASKS VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6acd4c6f-7264-4a48-99fc-eb6e21334a77">
+          <ID>PROJECT TASKS VW</ID>
+          <Name>PROJECT TASKS VW</Name>
+          <CreatedTimestamp>2011-02-01T15:32:02Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:12:24Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1bbb3439-13c3-4530-a9b9-670cdbec5b06">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_PROJECTS_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="ff7ca120-114e-4c9b-b06c-df2ceccdfb9a">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b7376803-5609-48c9-85c1-a634d6a4bb0a" />
+          </ProactiveCaching>
+          <EstimatedSize>1472357</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>PROJECT TASK BURNDOWN VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d7c0bea7-7f1f-4e4f-81d4-d5bf3a6e47eb">
+          <ID>PROJECT TASK BURNDOWN VW</ID>
+          <Name>PROJECT TASK BURNDOWN VW</Name>
+          <CreatedTimestamp>2011-02-16T18:59:29Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:13:08Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="18d2e4b0-4abc-4c80-8a49-6bd68d3e6b92">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_PROJECT_TASK_BURNDOWN_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="74db6458-650f-4e49-8b7d-93815e672568">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="69c440eb-d7e8-4988-afe7-55db66d91a41" />
+          </ProactiveCaching>
+          <EstimatedSize>36604940</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>PROJECT ADJUSTMENT MEASURES VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="32abe5e7-ac1e-49ff-9e60-ce6eec987576">
+          <ID>PROJECT ADJUSTMENT MEASURES VW</ID>
+          <Name>PROJECT ADJUSTMENT MEASURES VW</Name>
+          <CreatedTimestamp>2010-05-03T19:17:58Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:14:00Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f8c7fcc0-dcbf-4fae-8c46-7960a7313631">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_PROJECT_ADJUSTMENT_MEASURES_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="f27d4aa5-db7d-426e-9882-6428667782cf">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5e254970-6195-42b2-8b18-d440bb2f20c1" />
+          </ProactiveCaching>
+          <EstimatedSize>178935</EstimatedSize>
+          <EstimatedRows>2887</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2010-05-03T19:17:58Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <EstimatedRows>2887</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>PROJECTS</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                  <EstimatedCount>4426</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1206</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT STATUS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Project Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QA Reviewer</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Engagement Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Relationship Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Technical Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year Last Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Last Time Entry</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>TIME_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>THE DATE</AttributeID>
+                  <EstimatedCount>3654</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF WEEK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF PERIOD</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEKEND FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>HOLIDAY FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST PERIOD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YTD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LTM FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD ID</AttributeID>
+                  <EstimatedCount>184</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FUTURE DATE FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT YEAR FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PREVIOUS MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURR PERIOD FLG</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>PROJECT EXPENSE MEASURES VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e47eb5f0-d0ae-495b-a354-b607a549dc04">
+          <ID>PROJECT EXPENSE MEASURES VW 1</ID>
+          <Name>PROJECT EXPENSE MEASURES VW 1</Name>
+          <CreatedTimestamp>2010-05-03T19:18:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:13:14Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0a842e56-c0a9-42d4-bb32-f368b2fc0476">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_PROJECT_EXPENSE_MEASURES_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="406f359b-bf25-4cf8-a9e9-e1a2de453d69">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5707c327-9ba0-480d-aa21-be45080e43b9" />
+          </ProactiveCaching>
+          <EstimatedSize>6030270</EstimatedSize>
+          <EstimatedRows>21994</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2010-05-03T19:17:59Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <EstimatedRows>21994</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>TIME_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>THE DATE</AttributeID>
+                  <EstimatedCount>3654</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF WEEK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF PERIOD</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEKEND FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>HOLIDAY FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST PERIOD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YTD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LTM FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD ID</AttributeID>
+                  <EstimatedCount>184</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FUTURE DATE FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT YEAR FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PREVIOUS MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURR PERIOD FLG</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>PROJECTS</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                  <EstimatedCount>4426</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1206</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT STATUS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Project Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QA Reviewer</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Engagement Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Relationship Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Technical Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year Last Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Last Time Entry</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1134</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TASK TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TASK NAME</AttributeID>
+                  <EstimatedCount>24804</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DUE DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TASK HOURS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TASK REVISED HOURS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TASK ID</AttributeID>
+                  <EstimatedCount>29685</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                  <EstimatedCount>3836</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>EXPENSE TYPE ID</AttributeID>
+                  <EstimatedCount>24</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                  <EstimatedCount>3</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EXPENSE GROUP DESC</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EXPENSE TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EXPENSE TYPE DESC</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>EMPLOYEE CAREER LEVEL ID</AttributeID>
+                  <EstimatedCount>2100</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>BILLING RATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREEL LEVEL START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREER LEVEL END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FIRST NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MIDDLE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>STATUS NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYMENT START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYMENT END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FULL WEEK FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREER LEVEL NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FULL NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LINE PERSON 1</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYEE ID</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE TYPE ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE TYPE ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE TYPE ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE TYPE ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE TYPE ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE TYPE ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE TYPE ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation f</ID>
+              <Name>Aggregation f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 10</ID>
+              <Name>Aggregation 10</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE TYPE ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 11</ID>
+              <Name>Aggregation 11</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 12</ID>
+              <Name>Aggregation 12</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>THE DATE</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 13</ID>
+              <Name>Aggregation 13</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 14</ID>
+              <Name>Aggregation 14</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 15</ID>
+              <Name>Aggregation 15</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EXPENSE GROUP NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 16</ID>
+              <Name>Aggregation 16</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 17</ID>
+              <Name>Aggregation 17</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 18</ID>
+              <Name>Aggregation 18</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 19</ID>
+              <Name>Aggregation 19</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1a</ID>
+              <Name>Aggregation 1a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1b</ID>
+              <Name>Aggregation 1b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1c</ID>
+              <Name>Aggregation 1c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1d</ID>
+              <Name>Aggregation 1d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1e</ID>
+              <Name>Aggregation 1e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1f</ID>
+              <Name>Aggregation 1f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 20</ID>
+              <Name>Aggregation 20</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 21</ID>
+              <Name>Aggregation 21</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 22</ID>
+              <Name>Aggregation 22</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>SOLUTION AREA NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EXPENSE TYPES</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>EMPLOYEE MEASURES VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e9e87a34-58dc-42a6-9688-9a373b75d16c">
+          <ID>EMPLOYEE MEASURES VW</ID>
+          <Name>EMPLOYEE MEASURES VW</Name>
+          <CreatedTimestamp>2010-05-03T19:18:01Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:13:58Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6c5189be-356e-491b-a7bb-e8f7a6a6223b">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_EMPLOYEE_MEASURES_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="38819dc8-94da-4ece-a2f7-7607f99be127">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="6b77ecd4-dfaa-45ab-9c53-5fc5970b13ad" />
+          </ProactiveCaching>
+          <EstimatedSize>21568544</EstimatedSize>
+          <EstimatedRows>149208</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2010-05-03T19:18:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <EstimatedRows>149208</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>TIME_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>THE DATE</AttributeID>
+                  <EstimatedCount>3654</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF WEEK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF PERIOD</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEKEND FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>HOLIDAY FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST PERIOD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YTD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LTM FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD ID</AttributeID>
+                  <EstimatedCount>184</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FUTURE DATE FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT YEAR FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PREVIOUS MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURR PERIOD FLG</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>EMPLOYEE CAREER LEVEL ID</AttributeID>
+                  <EstimatedCount>2100</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>BILLING RATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREEL LEVEL START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREER LEVEL END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FIRST NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MIDDLE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>STATUS NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYMENT START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYMENT END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FULL WEEK FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CAREER LEVEL NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FULL NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LINE PERSON 1</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>EMPLOYEE ID</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE CAREER LEVEL ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>THE DATE</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE CAREER LEVEL ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>THE DATE</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>EMPLOYEE_CAREER_LEVEL_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>INVOICE MEASURES VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9dcefad8-6525-4217-8fd3-6ec9579cd467">
+          <ID>INVOICE MEASURES VW</ID>
+          <Name>INVOICE MEASURES VW</Name>
+          <CreatedTimestamp>2010-05-03T19:18:01Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:13:11Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5001c298-ccf3-4fba-ad08-bbfa867dc198">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_INVOICE_MEASURES_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="da9fbb2f-cac5-4919-80c4-a32181363a87">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="bc87a8af-4241-4f38-957b-e3ef25ed6899" />
+          </ProactiveCaching>
+          <EstimatedSize>777039</EstimatedSize>
+          <EstimatedRows>8390</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2010-05-03T19:18:01Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <EstimatedRows>8390</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>PROJECTS</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                  <EstimatedCount>4426</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1206</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT STATUS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Project Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QA Reviewer</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Engagement Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Relationship Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Technical Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year Last Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Last Time Entry</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>TIME_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>THE DATE</AttributeID>
+                  <EstimatedCount>3654</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF WEEK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF PERIOD</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEKEND FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>HOLIDAY FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST PERIOD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YTD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LTM FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD ID</AttributeID>
+                  <EstimatedCount>184</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FUTURE DATE FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT YEAR FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PREVIOUS MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURR PERIOD FLG</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>INVOICES</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>INVOICE DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>565</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INVOICE START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INVOICE END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INVOICE PAID FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Invoice Status</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INVOICE NUMBER UNQ</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INVOICE NUMBER</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>INVOICES</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>INVOICES</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>INVOICES</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>INVOICES</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>INVOICES</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>INVOICES PAID MEASURES</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6687549b-a1a9-4ac9-9ea7-d618be9e69fb">
+          <ID>INVOICES PAID MEASURES</ID>
+          <Name>INVOICES PAID MEASURES</Name>
+          <CreatedTimestamp>2010-05-03T19:18:03Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:12:23Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="07c4e34f-25ed-4445-aaf9-482f3150b1ff">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>INVOICES_PAID_MEASURES</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="6a65ffa8-c6f0-40b0-b035-520dfc482a66">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="092be4cc-88e0-4ee8-aeb0-48c9541f982d" />
+          </ProactiveCaching>
+          <EstimatedSize>668423</EstimatedSize>
+          <EstimatedRows>8193</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2010-05-03T19:18:02Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <EstimatedRows>8193</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>PROJECTS</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                  <EstimatedCount>4426</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1206</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT STATUS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Project Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QA Reviewer</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Engagement Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Relationship Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Technical Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year Last Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Last Time Entry</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>TIME_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>THE DATE</AttributeID>
+                  <EstimatedCount>3654</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF WEEK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF PERIOD</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEKEND FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>HOLIDAY FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST PERIOD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YTD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LTM FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD ID</AttributeID>
+                  <EstimatedCount>184</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FUTURE DATE FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT YEAR FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PREVIOUS MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURR PERIOD FLG</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>INVOICES</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>INVOICE DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>565</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INVOICE START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INVOICE END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INVOICE PAID FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Invoice Status</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INVOICE NUMBER UNQ</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INVOICE NUMBER</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>INVOICES</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>INVOICES</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>INVOICES</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>YEAR</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>INVOICES</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>INVOICES</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>INVENTORY MEASURES VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5ba9083c-6850-458f-b906-fd831b533188">
+          <ID>INVENTORY MEASURES VW</ID>
+          <Name>INVENTORY MEASURES VW</Name>
+          <CreatedTimestamp>2010-05-03T19:18:04Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:13:09Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="33fa6b0c-9fa8-4845-bb15-00ceae0dd6b2">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_INVENTORY_MEASURES_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="0214977c-a6d7-4fbc-b520-975a79ebf743">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="0605e5c3-dc08-485c-98ec-1abca528cc7a" />
+          </ProactiveCaching>
+          <EstimatedSize>1798488</EstimatedSize>
+          <EstimatedRows>14337</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2010-05-03T19:18:04Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <EstimatedRows>14337</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>PROJECTS</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PROJECT ID</AttributeID>
+                  <EstimatedCount>4426</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>INDUSTRY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CLIENT NAME</AttributeID>
+                  <EstimatedCount>1206</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE NAME</AttributeID>
+                  <EstimatedCount>11</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>SOLUTION AREA NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT TYPE NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>START DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>END DATE</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PROJECT STATUS</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Project Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QA Reviewer</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Engagement Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Relationship Manager</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Technical Lead</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year Last Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month First Time Entry</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Last Time Entry</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>CALENDAR PERIODS</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>PERIOD ID</AttributeID>
+                  <EstimatedCount>183</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>TIME_DIM</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>THE DATE</AttributeID>
+                  <EstimatedCount>3654</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF WEEK</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF PERIOD</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>DAY OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEK OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF MONTH</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF QUARTER</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>MONTH OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>QUARTER OF YEAR</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YEAR NAME</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>WEEKEND FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>HOLIDAY FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LAST PERIOD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>YTD FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>LTM FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PERIOD ID</AttributeID>
+                  <EstimatedCount>184</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>FUTURE DATE FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT YEAR FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PREVIOUS MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURRENT MONTH FLG</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>CURR PERIOD FLG</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>CALENDAR PERIODS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>CLIENT NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>CALENDAR PERIODS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>CALENDAR PERIODS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>CALENDAR PERIODS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PERIOD ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>CALENDAR PERIODS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PERIOD ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>CALENDAR PERIODS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PERIOD ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>PROJECTS</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>OFFICE NAME</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>CALENDAR PERIODS</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>TIME_DIM</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PERIOD ID</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>EXCHANGE RATE MEASURES VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6db29e72-a80f-42e5-b981-813aac645488">
+          <ID>EXCHANGE RATE MEASURES VW</ID>
+          <Name>EXCHANGE RATE MEASURES VW</Name>
+          <CreatedTimestamp>2010-05-20T15:01:15Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:11:55Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7a70c6e1-ceff-49b6-8150-e8be007f69df">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_EXCHANGE_RATE_MEASURES_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="15e11144-08f3-43a9-b9e3-564a181cecd5">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="29a02daa-e57e-4997-aaea-01946d0c8095" />
+          </ProactiveCaching>
+          <EstimatedSize>15023</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>EMPLOYEE PROJECT LEADS VW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e625beab-92aa-4501-9681-509049f26a65">
+          <ID>EMPLOYEE PROJECT LEADS VW</ID>
+          <Name>EMPLOYEE PROJECT LEADS VW</Name>
+          <CreatedTimestamp>2011-01-18T19:15:34Z</CreatedTimestamp>
+          <LastSchemaUpdate>2011-06-23T16:51:15Z</LastSchemaUpdate>
+          <LastProcessed>2011-09-26T10:11:58Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b714e18d-64ad-480b-bd4a-01e60ce66b03">
+            <DataSourceViewID>WMP_REPO</DataSourceViewID>
+            <TableID>dbo_EMPLOYEE_PROJECT_LEADS_VW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="39d6b938-975d-412b-b031-439648debc0a">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5cf529a5-52f9-455b-a12d-6d1763a98a2f" />
+          </ProactiveCaching>
+          <EstimatedSize>201824</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

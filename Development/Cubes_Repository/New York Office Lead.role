@@ -1,0 +1,12 @@
+﻿<Role xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6284db56-50e0-4991-870a-c044e9ec25dc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Role 19</ID>
+  <Name>New York Office Lead</Name>
+  <CreatedTimestamp>2011-02-03T19:58:04Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-02-03T19:59:05Z</LastSchemaUpdate>
+  <Members>
+    <Member>
+      <Name>WMP\gmermelstein</Name>
+      <Sid>S-1-5-21-1004336348-1993962763-1801674531-9176</Sid>
+    </Member>
+  </Members>
+</Role>

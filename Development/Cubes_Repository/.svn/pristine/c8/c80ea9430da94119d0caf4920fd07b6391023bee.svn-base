@@ -1,0 +1,17 @@
+﻿<Role xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e1733c65-3cf5-4e9f-bb24-95d906c04426" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Role 3</ID>
+  <Name>Montreal Office Lead</Name>
+  <CreatedTimestamp>2010-05-03T19:17:42Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-01-14T15:26:50Z</LastSchemaUpdate>
+  <Members>
+    <Member>
+      <Name>WMP\ybelanger</Name>
+    </Member>
+    <Member>
+      <Name>WMP\yleclerc</Name>
+    </Member>
+    <Member>
+      <Name>WMP\nbrunet</Name>
+    </Member>
+  </Members>
+</Role>

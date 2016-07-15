@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WMP BI Repository">
+</Property><Property Name="Solution File" Value="E:\Development\Cubes_Repository\WMP BI Repository.sln">
+</Property><Property Name="Date" Value="Friday, October 05, 2012">
+</Property><Property Name="Time" Value="15:00 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WMP BI Repository.sln" Description="File successfully backed up as E:\Development\Cubes_Repository\Backup\WMP BI Repository.sln">
+</Event><Event ErrorLevel="0" Project="" Source="WMP BI Repository.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WMP BI Repository.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,153 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>WMP_Repository</ID>
+        <ConnectionString>Provider=SQLNCLI10.1;Data Source=VCDCSQL204;Integrated Security=SSPI;Initial Catalog=WMP_Repository</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>CALENDAR PERIODS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>TIME_DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>CURRENCY</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Reporting Currency</ID>
+      </Dimension>
+      <Dimension>
+        <ID>EMPLOYEE_CAREER_LEVEL_DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>EXPENSE TYPE VW</ID>
+      </Dimension>
+      <Dimension>
+        <ID>INVOICES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>PROJECTS_DIM</ID>
+      </Dimension>
+      <Dimension>
+        <ID>PROJECTS VW</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Reporting Currency 1</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>WMP_REPO_CUBE</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>PROJECT MEASURES VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>PROJECT MEASURES VW</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>PROJECT TASK MEASURES VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>PROJECT TASK MEASURES VW</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>PROJECT TASKS VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>PROJECT TASKS VW</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>PROJECT TASK BURNDOWN VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>PROJECT TASK BURNDOWN VW</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>PROJECT ADJUSTMENT MEASURES VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>PROJECT ADJUSTMENT MEASURES VW</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>PROJECT EXPENSE MEASURES VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>PROJECT EXPENSE MEASURES VW 1</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>EMPLOYEE MEASURES VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>EMPLOYEE MEASURES VW</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>INVOICE MEASURES VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>INVOICE MEASURES VW</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>INVOICES PAID MEASURES</ID>
+            <Partitions>
+              <Partition>
+                <ID>INVOICES PAID MEASURES</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>INVENTORY MEASURES VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>INVENTORY MEASURES VW</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>EXCHANGE RATE MEASURES VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>EXCHANGE RATE MEASURES VW</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>EMPLOYEE PROJECT LEADS VW</ID>
+            <Partitions>
+              <Partition>
+                <ID>EMPLOYEE PROJECT LEADS VW</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode>Default</ImpersonationMode>
+      <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

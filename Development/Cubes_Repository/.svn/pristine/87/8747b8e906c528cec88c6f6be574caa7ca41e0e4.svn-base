@@ -1,0 +1,1101 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b93bd185-4100-41d0-95cd-20e6aa64dbb7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>EMPLOYEE_CAREER_LEVEL_DIM</ID>
+  <Name>EMPLOYEES</Name>
+  <CreatedTimestamp>2010-05-03T19:17:45Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-04-20T17:36:56Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-721" scrolltop="-5080" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8943" y="16563" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="EMPLOYEE_CAREER_LEVEL_VW" left="20" top="-3996" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5556" height="8996" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b415000024230000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_EMPLOYEE_CAREER_LEVEL_VW" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-721</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5080</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3996</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="207">
+            <Shape Id="EMPLOYEE CAREER LEVEL ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="EMPLOYEE CAREER LEVEL ID" />
+                <Attribute Id="BILLING RATE" />
+                <Attribute Id="CAREEL LEVEL START DATE" />
+                <Attribute Id="CAREER LEVEL END DATE" />
+                <Attribute Id="STATUS NAME" />
+                <Attribute Id="TYPE NAME" />
+                <Attribute Id="EMPLOYMENT END DATE" />
+                <Attribute Id="EMPLOYMENT START DATE" />
+                <Attribute Id="FIRST NAME" />
+                <Attribute Id="FULL WEEK FLG" />
+                <Attribute Id="LAST NAME" />
+                <Attribute Id="LINE PERSON 1" />
+                <Attribute Id="MIDDLE NAME" />
+                <Attribute Id="USERNAME" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="FULL NAME" Expanded="true">
+              <Attributes>
+                <Attribute Id="FULL NAME" />
+              </Attributes>
+              <Position x="283" y="20" />
+            </Shape>
+            <Shape Id="CAREER LEVEL NAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="CAREER LEVEL NAME" />
+              </Attributes>
+              <Position x="283" y="68" />
+            </Shape>
+            <Shape Id="SOLUTION AREA NAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="SOLUTION AREA NAME" />
+              </Attributes>
+              <Position x="283" y="116" />
+            </Shape>
+            <Shape Id="EMPLOYEE OFFICE 1" Expanded="true">
+              <Attributes>
+                <Attribute Id="EMPLOYEE OFFICE 1" />
+                <Attribute Id="OFFICE MNGR USERNAME" />
+              </Attributes>
+              <Position x="283" y="164" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2011-09-26T10:11:11Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5702d029-8022-495b-aaf5-99a2b2b22359">
+    <DataSourceViewID>WMP_REPO</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="ab052219-13cf-4bc9-af75-5e752a64b7c8">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="91681115-fbe0-4dd7-86a8-20d63aee3c32">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>2010-05-03T19:17:46Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 4</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="1e7bf999-389f-4412-8935-ba67fb4d2531">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e1059bd7-a016-430a-9190-ae8525aed44b">
+      <ID>DimensionPermission 2</ID>
+      <Name>DimensionPermission 2</Name>
+      <CreatedTimestamp>2010-05-03T19:17:46Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 5</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="a8356f2f-e87b-421e-abbe-fe66e769f537">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[CDN National]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="be5b8c5f-00ef-4701-b33b-49626f3bb533">
+      <ID>DimensionPermission 4</ID>
+      <Name>DimensionPermission 4</Name>
+      <CreatedTimestamp>2010-05-03T19:17:46Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Chicago Customer Lead</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="4b7fd3a0-b37a-4dc0-aa54-c61315b7ea04">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="3da0b111-294b-4068-a222-1e04a4960541">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Customer Experience]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="bbecc58d-7027-4223-9e73-f01b8be1522d">
+      <ID>DimensionPermission 5</ID>
+      <Name>DimensionPermission 5</Name>
+      <CreatedTimestamp>2010-05-03T19:17:47Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 7</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="d2d5b5b2-edeb-4e77-bd1a-e6a53e536d9b">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="8c3f469a-1229-4a99-9600-49e8408a1c8c">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Operations Excellence]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="ee08f722-365f-45ff-8469-bdadb1295673">
+      <ID>DimensionPermission 6</ID>
+      <Name>DimensionPermission 6</Name>
+      <CreatedTimestamp>2010-05-03T19:17:47Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Columbus Office Lead</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="c2deb94b-ca7b-4d1c-93eb-a10b1435d97a">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Columbus]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="1e25a164-5b52-4f60-9285-3f72ef6334ef">
+      <ID>DimensionPermission 7</ID>
+      <Name>DimensionPermission 7</Name>
+      <CreatedTimestamp>2010-05-03T19:17:47Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>US National Office Lead</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="eafa11b5-b32b-4c73-a6be-cecc8d7775d2">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[US National]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="c0389eb2-1b96-46d5-b3dc-9789e7d0a9bf">
+      <ID>DimensionPermission 8</ID>
+      <Name>DimensionPermission 8</Name>
+      <CreatedTimestamp>2010-05-03T19:17:48Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 8</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="dd0eeb7a-d79d-4613-8e61-e3fe3a16ff04">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Seattle]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="c3c84d19-e01a-4797-be9b-e75e3faa39dc">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>2010-05-03T19:17:48Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 3</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="8db19b9b-e779-48eb-905c-c0b8cb0bbb8a">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Montreal]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="e7850737-c965-499c-8a52-21dbbf3d1641">
+      <ID>DimensionPermission 10</ID>
+      <Name>DimensionPermission 10</Name>
+      <CreatedTimestamp>2010-05-03T19:17:48Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 10</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="75519799-f2f0-4afc-9bea-988979d21c4e">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Toronto]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="5f4a0f65-ebac-4fd3-a388-3272e64579dd">
+      <ID>DimensionPermission 3</ID>
+      <Name>DimensionPermission 3</Name>
+      <CreatedTimestamp>2010-05-03T19:17:49Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 6</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="ef3600e3-ac15-4b18-a5b8-265aabb7c33c">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="68e49609-d45f-4162-81b3-847c497081d6">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Banking]}</AllowedSet>
+          <VisualTotals>1</VisualTotals>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="8146e18a-6b48-4e22-b7cf-0c6abf538abd">
+          <AttributeID>BILLING RATE</AttributeID>
+          <VisualTotals>1</VisualTotals>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="940b57a4-0fa8-4ec1-8b8f-86309704a290">
+          <AttributeID>EMPLOYEE ID</AttributeID>
+          <VisualTotals>1</VisualTotals>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="3deea934-7aae-4b23-9f06-eaa2c61f342e">
+      <ID>DimensionPermission 9</ID>
+      <Name>DimensionPermission 9</Name>
+      <CreatedTimestamp>2010-05-03T19:17:49Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 9</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="bbe3628f-de3b-4eed-992e-3e75394df99b">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[US Products]</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="a854b3eb-6272-4480-9c15-b46cb4538d9c">
+      <ID>DimensionPermission 11</ID>
+      <Name>DimensionPermission 11</Name>
+      <CreatedTimestamp>2010-05-25T01:09:04Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 11</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="bf0c877e-dd08-4738-af21-d97a21facb20">
+          <AttributeID>BILLING RATE</AttributeID>
+          <DeniedSet>{}</DeniedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="bd64fe5f-f46d-4543-aa16-95c9109ea5f1">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Healthcare - Payer]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="1750f20c-2dbe-4aea-b117-db08b811a045">
+      <ID>DimensionPermission 12</ID>
+      <Name>DimensionPermission 12</Name>
+      <CreatedTimestamp>2010-05-25T01:17:17Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 12</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="f656e88b-b679-421e-a7a8-a70ba16431e3">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Capital Markets], [EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Private Equity]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="8aa4e954-3c23-47ab-a81a-454b5b8f9cfe">
+      <ID>DimensionPermission 13</ID>
+      <Name>DimensionPermission 13</Name>
+      <CreatedTimestamp>2010-05-25T01:19:31Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 13</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="eedef3ba-6666-41a3-9fed-ef60f8177e5b">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Energy &amp; Utilities]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="7cb652a3-4b72-4353-a659-0f1443d385f2">
+      <ID>DimensionPermission 14</ID>
+      <Name>DimensionPermission 14</Name>
+      <CreatedTimestamp>2010-05-25T01:23:58Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 14</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="f9d8def5-dcf2-465b-b84e-ba21baed6469">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="c0438856-75a0-4e71-980e-567338f60076">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Infrastructure &amp; Operations]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="8a0a8cb8-4b30-4556-97a3-8bddca7870ad">
+      <ID>DimensionPermission 15</ID>
+      <Name>DimensionPermission 15</Name>
+      <CreatedTimestamp>2010-05-25T01:26:29Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 15</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="8e395945-ac3e-4c25-8cbf-0712315eaf28">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="7fd7435b-ac24-41d2-9413-8c8825e38bb6">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Managed Services], [EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Products]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="b350e2c7-76da-47de-a94c-8bb4236ce98a">
+      <ID>DimensionPermission 16</ID>
+      <Name>DimensionPermission 16</Name>
+      <CreatedTimestamp>2010-05-25T01:28:23Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 16</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="55a10c6f-7bd6-402e-adb7-a49e624ccbc4">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="2c2abb3f-22b0-4065-a47f-68a824b0ebbc">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Technology Integration]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="a425a9a1-ef06-482f-88cf-97456aea12b6">
+      <ID>DimensionPermission 17</ID>
+      <Name>DimensionPermission 17</Name>
+      <CreatedTimestamp>2010-09-22T21:07:31Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 17</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="bd7dc764-023e-45dc-9a10-b5a8c233b03a">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[US Corporate]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="a4022e36-6839-4d4b-92f4-0d128889d367">
+      <ID>DimensionPermission 18</ID>
+      <Name>DimensionPermission 18</Name>
+      <CreatedTimestamp>2011-02-03T19:59:06Z</CreatedTimestamp>
+      <LastSchemaUpdate>2011-04-20T17:36:58Z</LastSchemaUpdate>
+      <RoleID>Role 19</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="0bb0a106-8d5b-438f-88a2-522e75217dc6">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Banking], [EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Insurance]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="7caa8ed6-5462-4dcc-a12b-eccf1801823c">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[New York]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="da064b51-3290-4476-ac70-0ee40bde7cec">
+      <ID>DimensionPermission 19</ID>
+      <Name>DimensionPermission 19</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 20</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="812ea87f-00a7-4d94-b98d-9afd390bb7e2">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Insurance]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="58622367-d9f9-4994-b9d0-95e06d5c50bd">
+      <ID>DimensionPermission 20</ID>
+      <Name>DimensionPermission 20</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 21</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="682d6615-f21e-4888-bf75-a19185c2d7ae">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Healthcare - Provider]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="261897f5-bd00-4d94-bdca-2fd91239ee81">
+      <ID>DimensionPermission 21</ID>
+      <Name>DimensionPermission 21</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 22</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="1a2c7e9a-5e8e-49ee-ba3f-a7061882f125">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].&amp;[Manufacturing &amp; Distribution]}</AllowedSet>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="614b85e4-9427-40b8-83a9-ef5fda9286b6">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <AllowedSet>{[EMPLOYEES].[EMPLOYEE OFFICE].&amp;[Chicago]}</AllowedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="88be2dd5-2bc8-47ea-8a45-dae9e5167986">
+      <ID>DimensionPermission 22</ID>
+      <Name>DimensionPermission 22</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 23</RoleID>
+      <Read>Allowed</Read>
+      <AttributePermissions>
+        <AttributePermission dwd:design-time-name="627a3cde-8386-4ddc-9219-a3189581dc3f">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+        </AttributePermission>
+        <AttributePermission dwd:design-time-name="ef74aaa6-c367-4424-ac78-523ea91175d6">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <DeniedSet>{[EMPLOYEES].[EMPLOYEE SOLUTION AREA].[All]}</DeniedSet>
+        </AttributePermission>
+      </AttributePermissions>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="c28e3b3d-8293-433f-aebf-d1c3e729f72d">
+      <ID>EMPLOYEE CAREER LEVEL ID</ID>
+      <Name>EMPLOYEE CAREER LEVEL ID</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>2100</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="92971687-2dca-4db9-83b4-2130a5668ec8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1121d75d-aa9e-4f5d-adf2-1a07e1f0bf23">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>EMPLOYEE_CAREER_LEVEL_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="612bc1e7-ab48-49a1-aa0d-7fe013b6e247">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="90a7fc95-7032-4c30-9c59-9888cf9c1fd4">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>EMPLOYEE_CAREER_LEVEL_ID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="6ebbdbc7-8849-49ee-af1c-5e59bf9a74e9">
+          <AttributeID>BILLING RATE</AttributeID>
+          <Name>BILLING RATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="42739682-7806-4b19-9b88-ffa18db73b57">
+          <AttributeID>CAREEL LEVEL START DATE</AttributeID>
+          <Name>CAREEL LEVEL START DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4c8ad95d-9b4b-4513-be32-7781f2fdac2a">
+          <AttributeID>CAREER LEVEL END DATE</AttributeID>
+          <Name>CAREER LEVEL END DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9009ad29-e8f4-41bf-9a20-e1ad1e2fd107">
+          <AttributeID>FIRST NAME</AttributeID>
+          <Name>FIRST NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ce4ebe29-ffdc-4d1d-8b70-e00f15cef329">
+          <AttributeID>LAST NAME</AttributeID>
+          <Name>LAST NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="79051b0d-df34-4e33-8665-615e29249671">
+          <AttributeID>MIDDLE NAME</AttributeID>
+          <Name>MIDDLE NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="000d52d0-7e82-4f97-afbb-f9512ff506d8">
+          <AttributeID>EMPLOYMENT START DATE</AttributeID>
+          <Name>EMPLOYMENT START DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b1ed0091-1d43-4881-8c04-ff46083482a6">
+          <AttributeID>EMPLOYMENT END DATE</AttributeID>
+          <Name>EMPLOYMENT END DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="11f5d899-6e14-4ff2-bea7-d23d0535c7aa">
+          <AttributeID>FULL WEEK FLG</AttributeID>
+          <Name>FULL WEEK FLG</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="84016cca-cf87-4c38-97c2-1e4342d5f1aa">
+          <AttributeID>EMPLOYEE OFFICE 1</AttributeID>
+          <Name>EMPLOYEE OFFICE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="12fcfa07-3ff9-4144-a55d-cfc432e10945">
+          <AttributeID>LINE PERSON 1</AttributeID>
+          <Name>LINE PERSON</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6e235126-0758-4cf0-8d38-2e09e231b503">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <Name>EMPLOYEE SOLUTION AREA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f502d087-c1f4-43a9-a552-4423f614d64d">
+          <AttributeID>CAREER LEVEL NAME</AttributeID>
+          <Name>CAREER LEVEL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="93eda017-14dd-4226-a9c1-c67144bc50e2">
+          <AttributeID>TYPE NAME</AttributeID>
+          <Name>EMPLOYEE TYPE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="06293a79-3dfa-4b24-9c43-39b8c7faf331">
+          <AttributeID>STATUS NAME</AttributeID>
+          <Name>EMPLOYEE STATUS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e79855db-d423-482d-9bd9-7d40c8abe2c7">
+          <AttributeID>USERNAME</AttributeID>
+          <Name>USERNAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7f814a90-ca6e-4c6d-9f8b-968c75c91281">
+          <AttributeID>FULL NAME</AttributeID>
+          <Name>FULL NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fb3f0413-4e07-4742-a9d4-8d9b00f0dd1c">
+          <AttributeID>EMPLOYEE ID</AttributeID>
+          <Name>EMPLOYEE ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b619b6e4-0ce5-4968-a376-822607ee80b3">
+      <ID>SOLUTION AREA NAME</ID>
+      <Name>EMPLOYEE SOLUTION AREA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="06183bca-9b99-4987-8436-d1bbc9561a85">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85c62138-6a5a-49bc-b067-6ba07e5056b8">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>SOLUTION_AREA_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="da73b06c-dd94-4b78-8d19-7444d4b3c0cd">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bd8e7a04-0a77-4c5a-a706-f7f2dfe5b60a">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>SOLUTION_AREA_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="85fa01bd-268b-4647-aa14-efedb60d316b">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="45fcced1-5555-4b97-8054-41e8266961b7">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>SOLUTION_AREA_NAME</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1d1cf046-0f75-43c5-a609-da1aacf8f7c3">
+      <ID>BILLING RATE</ID>
+      <Name>BILLING RATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ec8294e8-4876-4e31-9b70-ef0082eee181">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c34bb7c3-a2c5-4661-b763-60a8a65c8546">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>BILLING_RATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1e4050c3-4934-4648-b113-1233175790ae">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="00ab057f-cbbe-4312-9d4a-a88150186d89">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>BILLING_RATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bf6f8332-a2a5-429a-9c84-f3699c4d39dd">
+      <ID>CAREEL LEVEL START DATE</ID>
+      <Name>CAREEL LEVEL START DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e86b034-082d-4504-91df-4aa05e72b313">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a2cd979-fa33-4911-ab19-c280b625163e">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>CAREEL_LEVEL_START_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b869b76f-5ebb-4b2b-a989-2e956b37bb26">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="edd8b640-1f9d-4e46-9bf2-4ef68870a1a4">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>CAREEL_LEVEL_START_DATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e136bf28-c68d-4be6-869f-5da10d16befc">
+      <ID>CAREER LEVEL END DATE</ID>
+      <Name>CAREER LEVEL END DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae422b23-1bd4-479f-8992-77e3092d63ce">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6082492f-74c5-4d01-800c-d669eaecb85a">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>CAREER_LEVEL_END_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3c7aef35-7d53-4d1a-b103-d29607cc5764">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="93440edc-aab5-4cbd-aa4f-15c323622ef5">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>CAREER_LEVEL_END_DATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d32bee3e-fafe-4349-9e37-f7a2dc1a3d12">
+      <ID>FIRST NAME</ID>
+      <Name>FIRST NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c3a442c8-e6de-49a1-8e68-faa49cf501b4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb82b221-feca-4562-974f-5f02f98a28b5">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>FIRST_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="78665a44-9c68-4197-a066-170a4790e4e5">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="321ead2f-5b5a-414c-abd5-8eed303c74d4">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>FIRST_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7500ef8f-213f-45cb-9964-aaffed399a8c">
+      <ID>LAST NAME</ID>
+      <Name>LAST NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="665b12bc-f353-4326-8947-dcf66086aaf6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2d04622-ceb2-45ea-a5da-1b8018a22ae5">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>LAST_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ae6d1620-63e1-4a85-b2f9-507176a02ee2">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9f928fbf-d260-400b-a365-822c019f3738">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>LAST_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3dd88ef8-690e-4131-b916-55a105ff61fc">
+      <ID>MIDDLE NAME</ID>
+      <Name>MIDDLE NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ff4715cf-0b8c-48a2-b662-02af44e8448f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce0eda63-059f-4396-a5c9-0541fc159d7f">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>MIDDLE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="493abe4f-3c39-4ed2-8356-79afa4791c7e">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="df6dc31c-e180-485d-ab91-4a48a3372af5">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>MIDDLE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f83536c4-43f4-4926-8f62-c6a641df1098">
+      <ID>USERNAME</ID>
+      <Name>USERNAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d7b57fad-33d1-4481-a371-0d3ccb6ad36d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="72e5cccf-71e4-46ee-a639-9aa05ba3e538">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>USERNAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="df1d69d8-c80c-4efd-b738-b6fbfa65ed55">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0c969576-2586-4500-ba87-70d9c9963c41">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>USERNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="37f3d4db-589c-4fb0-bcc9-59b17333d63f">
+      <ID>TYPE NAME</ID>
+      <Name>EMPLOYEE TYPE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a82197df-2e47-46bb-af56-821ed5ce2e03">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc2553a9-24b2-4b46-8bdd-1e30a5206f36">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>TYPE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f99d9696-96a2-47a9-8b98-3cd47aa6e636">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4c6eaa0c-cec5-4ce4-a59d-070cde6210af">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>TYPE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="10c0c804-25d5-457b-8288-a6e03152fd96">
+      <ID>STATUS NAME</ID>
+      <Name>EMPLOYEE STATUS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="309925de-c348-4e90-a593-f5e21d161fe1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b036b2e2-5af5-4f63-a46b-f2beffae7711">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>STATUS_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="307f4872-97d2-4184-b8f0-7b39257d4279">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="44ba7796-abe3-4f93-b0cc-631e1ddc73d6">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>STATUS_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d8c79c6b-b7a0-47a3-9908-ac4551af9a78">
+      <ID>EMPLOYMENT START DATE</ID>
+      <Name>EMPLOYMENT START DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="982ef9de-b223-4589-b311-7ca94d166a09">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="046245bf-6f63-40ef-a634-4d97f25a40e2">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>EMPLOYMENT_START_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="02900109-ae4f-466f-b0f7-d0652ff804b1">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="511b5b89-acfe-492e-ad43-25435c1e2181">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>EMPLOYMENT_START_DATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fe5eff3c-eb75-44f4-a3ef-df1c9f2488f4">
+      <ID>EMPLOYMENT END DATE</ID>
+      <Name>EMPLOYMENT END DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7fcfea6a-e718-4ea0-bb9a-1d85adb57540">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d69e345-e866-4d06-a95d-1b01adc507c5">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>EMPLOYMENT_END_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0566ec73-d480-458f-878e-d05d961fc7ad">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="50bc1c20-d149-4ab3-b3e1-509679b51a36">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>EMPLOYMENT_END_DATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8600fd37-ba99-4582-97e7-8955e1939137">
+      <ID>FULL WEEK FLG</ID>
+      <Name>FULL WEEK FLG</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eb1d97a1-9cb7-4c1c-9d44-9cf79b29d0a2">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1604240-0a13-46b0-87a1-d0cc6862e82d">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>FULL_WEEK_FLG</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ce00c034-a397-4029-bd84-89783be2cbfb">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="93c7484f-b1c1-415e-a9e7-9e83ed54f4d7">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>FULL_WEEK_FLG</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cef49f6d-3510-40ba-b428-76c42eddcbf8">
+      <ID>CAREER LEVEL NAME</ID>
+      <Name>CAREER LEVEL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f84143a6-25f4-4e4e-bfc3-6f35708351cf">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c9dd36a-848b-4f04-8872-8303f22e1fab">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>CAREER_LEVEL_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="67cb5917-20d9-476e-8d5b-d003b44aa56b">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6d89b749-e5de-40e2-80a6-d994e6ae70a1">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>CAREER_LEVEL_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8e8d3610-d8f9-4f3f-9172-3a3e3b3eb181">
+      <ID>FULL NAME</ID>
+      <Name>FULL NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed59f8e6-425c-4c60-88bd-31eeba70c94f">
+          <DataType>WChar</DataType>
+          <DataSize>152</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dedefd40-7672-4bfc-bd8f-535e208d849c">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>FULL_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2ae301a7-2af0-4297-a7f1-cdab79ede200">
+        <DataType>WChar</DataType>
+        <DataSize>152</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2bfcd1cd-97cc-498e-8f51-6984aab0decf">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>FULL_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="d7faa6b2-f40a-4b25-a975-557142beab48">
+        <DataType>WChar</DataType>
+        <DataSize>152</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="27a5d9e7-9102-4907-b6ba-b83a6e858905">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>FULL_NAME</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="35c82bf2-4841-4f17-9575-1950c9c40aef">
+      <ID>EMPLOYEE OFFICE 1</ID>
+      <Name>EMPLOYEE OFFICE</Name>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="12e22b04-da3d-457b-b666-d6554f34b971">
+          <DataType>WChar</DataType>
+          <DataSize>256</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3dc2b38e-c0c1-4ab9-a526-e28bca20555a">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>EMPLOYEE_OFFICE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="67da924a-e470-4e6f-92d2-3ad73cc207b2">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9d147934-1434-410e-9212-16cd68984bd7">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>EMPLOYEE_OFFICE</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a15914e3-d89d-4edb-8acc-a87aec7e504e">
+          <AttributeID>OFFICE MNGR USERNAME</AttributeID>
+          <Name>OFFICE MNGR USERNAME</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b431a605-0006-4ad0-9d25-e0a6a06e3d54">
+      <ID>LINE PERSON 1</ID>
+      <Name>LINE PERSON</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3739eded-08f2-4b43-9cd3-9b2d9f58fe6d">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59b2565d-6ba1-40e2-bc86-5ac2799889fb">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>LINE_PERSON</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ad69db44-635b-462c-90d9-09f1b3aa853a">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="75e9bc6e-b0c1-4eb8-b70d-840481320008">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>LINE_PERSON</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1be74838-17d3-4a07-936f-a7a7d682e259">
+      <ID>OFFICE MNGR USERNAME</ID>
+      <Name>OFFICE MNGR USERNAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="84968af3-be54-4bba-91e9-a5fbf0699608">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2e7860f-cd56-4468-9cf7-945338d9bd19">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>OFFICE_MNGR_USERNAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e16992ba-d68b-4f44-a335-6ab4d58877f4">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="319257ff-5bd6-4b05-9766-7bf3c7fbc84b">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>OFFICE_MNGR_USERNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2e674369-37fb-4e23-9b97-b70b06ba0c5a">
+      <ID>EMPLOYEE ID</ID>
+      <Name>EMPLOYEE ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0b65765e-1b53-44d7-8f1b-55921a17abab">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="efd3d2be-a573-4228-9e76-7cf727e9074e">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>EMPLOYEE_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0378768f-ace6-419e-8060-2578f21a69dd">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="456b58f7-c144-4e18-bea7-a8dd2875b623">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>EMPLOYEE_ID</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="1903ecb5-4604-4a46-921f-a4e59ae582c7">
+      <ID>Hierarchy</ID>
+      <Name>EMPLOYEES BY OFFICE</Name>
+      <Levels>
+        <Level dwd:design-time-name="89c92a9c-cc98-46f7-800f-8b277254530a">
+          <ID>EMPLOYEE OFFICE</ID>
+          <Name>EMPLOYEE OFFICE</Name>
+          <SourceAttributeID>EMPLOYEE OFFICE 1</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="fc36ab97-e3f2-4493-ba50-fd8e2fee7818">
+          <ID>SOLUTION AREA NAME</ID>
+          <Name>EMPLOYEE SOLUTION AREA</Name>
+          <SourceAttributeID>SOLUTION AREA NAME</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="bf4dbe45-8f8a-4732-ac04-734f973ab8e7">
+          <ID>CAREER LEVEL NAME</ID>
+          <Name>CAREER LEVEL</Name>
+          <SourceAttributeID>CAREER LEVEL NAME</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="69c54ef3-19b7-48cc-88eb-aa446b9fc2f4">
+          <ID>FULL NAME</ID>
+          <Name>FULL NAME</Name>
+          <SourceAttributeID>FULL NAME</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="3179bc24-56d1-46ea-99ae-1de544b23ba8">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="285d9bfd-8e97-4059-be73-f377194a0d78" />
+  </ProactiveCaching>
+</Dimension>

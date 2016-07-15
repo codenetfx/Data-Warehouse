@@ -1,0 +1,21 @@
+﻿<Role xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cb0a2db9-2dd4-4142-95ef-6d527f866729" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Role 3</ID>
+  <Name>Office Lead</Name>
+  <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+  <Description>General office lead role for offices that have one manager/lead for accessing specific office data. Office with additional managers/leads have a role for that specific office.</Description>
+  <Members>
+    <Member>
+      <Name>WMP\tbolger</Name>
+    </Member>
+    <Member>
+      <Name>WMP\ybelanger</Name>
+    </Member>
+    <Member>
+      <Name>WMP\sadkins</Name>
+    </Member>
+    <Member>
+      <Name>WMP\kmccarty</Name>
+    </Member>
+  </Members>
+</Role>

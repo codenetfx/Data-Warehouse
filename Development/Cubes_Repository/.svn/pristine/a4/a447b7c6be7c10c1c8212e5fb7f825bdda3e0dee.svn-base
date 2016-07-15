@@ -1,0 +1,656 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4c4d90c3-1ab9-44fb-9914-50a4101ea036" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>EMPLOYEE_CAREER_LEVEL_DIM</ID>
+  <Name>EMPLOYEE CAREER LEVELS</Name>
+  <CreatedTimestamp>2009-10-30T20:54:32Z</CreatedTimestamp>
+  <LastSchemaUpdate>2009-11-02T21:56:29Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-721" scrolltop="-5080" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8864" y="20796" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.2" tooltip="EMPLOYEE_CAREER_LEVEL_VW" left="20" top="-3996" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5556" height="8996" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b415000024230000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_EMPLOYEE_CAREER_LEVEL_VW" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-721</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5080</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3996</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="207">
+            <Shape Id="EMPLOYEE CAREER LEVEL ID" Expanded="true">
+              <Attributes>
+                <Attribute Id="EMPLOYEE CAREER LEVEL ID" />
+                <Attribute Id="BILLING RATE" />
+                <Attribute Id="CAREEL LEVEL START DATE" />
+                <Attribute Id="CAREER LEVEL END DATE" />
+                <Attribute Id="EMPLOYMENT END DATE" />
+                <Attribute Id="EMPLOYMENT START DATE" />
+                <Attribute Id="FIRST NAME" />
+                <Attribute Id="FULL WEEK FLG" />
+                <Attribute Id="LAST NAME" />
+                <Attribute Id="LINE PERSON FLG" />
+                <Attribute Id="MIDDLE NAME" />
+                <Attribute Id="STATUS NAME" />
+                <Attribute Id="TYPE NAME" />
+                <Attribute Id="USERNAME" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="FULL NAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="FULL NAME" />
+              </Attributes>
+              <Position x="283" y="20" />
+            </Shape>
+            <Shape Id="CAREER LEVEL NAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="CAREER LEVEL NAME" />
+              </Attributes>
+              <Position x="283" y="68" />
+            </Shape>
+            <Shape Id="SOLUTION AREA NAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="SOLUTION AREA NAME" />
+              </Attributes>
+              <Position x="283" y="116" />
+            </Shape>
+            <Shape Id="OFFICE NAME" Expanded="false">
+              <Attributes>
+                <Attribute Id="OFFICE NAME" />
+              </Attributes>
+              <Position x="283" y="164" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2009-11-03T15:49:27Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="28366d15-7062-4890-8152-f268c69888e2">
+    <DataSourceViewID>WMP_REPO</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="fbae61ac-74e9-43fc-9123-758aeec08354">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Latin1_General_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute dwd:design-time-name="59441360-4059-4dcb-9521-7edd29057a65">
+      <ID>EMPLOYEE CAREER LEVEL ID</ID>
+      <Name>EMPLOYEE CAREER LEVEL ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc179a56-8a63-41d7-8b06-e47d44253799">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="70819b4f-55b2-421f-9744-aa678a322427">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>EMPLOYEE_CAREER_LEVEL_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ed83ea4d-0a7e-416b-b9e3-6ccbdeda49df">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="46da06f8-49de-4a32-9ac3-32758e1d5545">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>EMPLOYEE_CAREER_LEVEL_ID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4c4515cd-8904-43ce-9c18-b8c0b2539ed0">
+          <AttributeID>OFFICE NAME</AttributeID>
+          <Name>OFFICE NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a8088f8b-cda6-43cc-8233-b6fd05e76be0">
+          <AttributeID>SOLUTION AREA NAME</AttributeID>
+          <Name>SOLUTION AREA NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d18c2f5-21bb-4ee7-9584-99d1edef4a2c">
+          <AttributeID>BILLING RATE</AttributeID>
+          <Name>BILLING RATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3fd34088-b25a-4411-a059-43d8a1617a8a">
+          <AttributeID>CAREEL LEVEL START DATE</AttributeID>
+          <Name>CAREEL LEVEL START DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0b28c5ae-e155-4c46-a7c8-edacd7ee43a2">
+          <AttributeID>CAREER LEVEL END DATE</AttributeID>
+          <Name>CAREER LEVEL END DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5c4d49fd-bc47-4d5b-b3ed-3a07b7b6692f">
+          <AttributeID>FIRST NAME</AttributeID>
+          <Name>FIRST NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b254ec55-4b23-4911-9a6b-d5f18e51d5f5">
+          <AttributeID>LAST NAME</AttributeID>
+          <Name>LAST NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="02ce6a65-89e6-434a-b0e0-e4737943693a">
+          <AttributeID>MIDDLE NAME</AttributeID>
+          <Name>MIDDLE NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e8d3e0f4-f959-4320-a5a0-93b09e4077ed">
+          <AttributeID>USERNAME</AttributeID>
+          <Name>USERNAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8837f92e-160c-42aa-bd8d-c9630c4c786b">
+          <AttributeID>TYPE NAME</AttributeID>
+          <Name>TYPE NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6d756265-4bcf-4f16-a371-37c1aa54c193">
+          <AttributeID>STATUS NAME</AttributeID>
+          <Name>STATUS NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="23c91771-7b43-476e-b968-8aa006855ba2">
+          <AttributeID>EMPLOYMENT START DATE</AttributeID>
+          <Name>EMPLOYMENT START DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="318232a3-9466-47a7-98c1-eb5c06b32e40">
+          <AttributeID>EMPLOYMENT END DATE</AttributeID>
+          <Name>EMPLOYMENT END DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0c1ba8b3-6f22-4365-afa5-330c48639352">
+          <AttributeID>FULL WEEK FLG</AttributeID>
+          <Name>FULL WEEK FLG</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="50b7ff86-c51d-4657-b77f-f08b3037c958">
+          <AttributeID>LINE PERSON FLG</AttributeID>
+          <Name>LINE PERSON FLG</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d152785e-683d-43a7-8929-7832eb09812d">
+          <AttributeID>CAREER LEVEL NAME</AttributeID>
+          <Name>CAREER LEVEL NAME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c5e56266-1bd0-4cbb-9b31-32f6b237a72d">
+          <AttributeID>FULL NAME</AttributeID>
+          <Name>FULL NAME</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="e2797de3-2d84-49c5-930b-7741be3f852f">
+      <ID>OFFICE NAME</ID>
+      <Name>OFFICE NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="545be205-dc7b-4d7b-8e8c-9faa984f09af">
+          <DataType>WChar</DataType>
+          <DataSize>256</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="029a78ca-a37e-45ee-8f8f-864991d80589">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>OFFICE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5d4ebc21-b540-42b9-82f0-ccb3d69e6fb5">
+        <DataType>WChar</DataType>
+        <DataSize>256</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8bd9413a-ccc6-4704-b4f1-7bf16997b521">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>OFFICE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="a8b18818-0624-406a-9bac-043c255e4991">
+      <ID>SOLUTION AREA NAME</ID>
+      <Name>SOLUTION AREA NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d341b5ee-11f7-4cd1-8930-b70f69a2c6ff">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eecbf773-3985-42cf-bb9c-766a8f16cc78">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>SOLUTION_AREA_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a8986ce2-7ef6-4e5b-9724-5119de1d6404">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="54648684-7c53-43d0-a871-0e1e145490a4">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>SOLUTION_AREA_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="df04d14c-a6c4-4e0a-8461-dd2ce48ac409">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b2c95a32-2efb-4b46-aa21-1ca68aaa0efa">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>SOLUTION_AREA_NAME</ColumnID>
+        </Source>
+      </ValueColumn>
+    </Attribute>
+    <Attribute dwd:design-time-name="d12ec8cf-f192-431b-b97b-a78f9aa903e3">
+      <ID>BILLING RATE</ID>
+      <Name>BILLING RATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cf6e042a-f092-4631-9a69-845f68167039">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed960fb4-9d1e-4da3-a7a1-b3a03cd1b211">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>BILLING_RATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8ff4bded-47cd-40dc-beb8-97b29494fdeb">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0ed5a0d3-4598-4527-90b4-4bb288c13e21">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>BILLING_RATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="4b617999-5270-4f2e-85ef-c56cd3d7a252">
+      <ID>CAREEL LEVEL START DATE</ID>
+      <Name>CAREEL LEVEL START DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b37db6a-f34f-4e0d-a4e6-35c64b81105e">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="54fb590f-af11-431f-ba83-5adf5a89a46e">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>CAREEL_LEVEL_START_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="97aaafed-538c-4dbb-b2fd-0ba7b721a528">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="347a7c11-b464-4d91-bc18-f769ae894aae">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>CAREEL_LEVEL_START_DATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="87e3cf03-f1b9-4472-b830-02dea1b17625">
+      <ID>CAREER LEVEL END DATE</ID>
+      <Name>CAREER LEVEL END DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9358c5f4-d3a9-4682-b59f-52c45247e768">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cc14222d-a80a-497d-9b5b-c70a4de89ca2">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>CAREER_LEVEL_END_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c6aedbd6-0518-44f0-bc47-09178b6d78c9">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fcbfff5f-6237-4f4a-a81e-b542c0b76e2b">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>CAREER_LEVEL_END_DATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="d59c61b5-04ea-46b1-8852-3152027e34fc">
+      <ID>FIRST NAME</ID>
+      <Name>FIRST NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="adb9181d-740b-46be-9b86-0f42d547ca63">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c82de9fe-5abd-4b55-ae2c-931f34123863">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>FIRST_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="985cba39-d9a5-43b2-b310-0adccef8b633">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="43346548-b6f4-437f-811a-a83ec48552b5">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>FIRST_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="cc06a4f0-f535-47b6-a609-1d293014c6bb">
+      <ID>LAST NAME</ID>
+      <Name>LAST NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="70ac1cc2-8656-4b4a-9fe4-59bc662da1b5">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="437f1463-c8da-4aa0-bf01-5a88fae4a5e8">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>LAST_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ef07e19a-6602-4826-bd27-154c997cc8fe">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c883858e-6222-4b61-9640-b53dda8da349">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>LAST_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="aebe6b5f-ccd2-4323-918e-0ad4ee3febb9">
+      <ID>MIDDLE NAME</ID>
+      <Name>MIDDLE NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0708a0be-6d6d-4d89-b52a-8d49a8e9c85b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e351d8d3-f4ec-410c-af24-1475d618e2d1">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>MIDDLE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="556e5649-7c9d-4550-85f3-579b898e7435">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e1345c5f-a275-4afd-a239-e14360cf70e5">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>MIDDLE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="257bf5fd-c765-41b9-be30-9823f309d8eb">
+      <ID>USERNAME</ID>
+      <Name>USERNAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ebf2aee-8065-4bce-beb0-36de8cd18c93">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d2adb0c-233e-4468-9a39-993a0dbc79ff">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>USERNAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1a0d8b33-41c6-444e-9ac2-70cb426b87c5">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7bdbbc5c-a263-4c94-a2a2-1d0d8c088e0b">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>USERNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="c2447707-4f61-47fd-a11c-5a9c78905d36">
+      <ID>TYPE NAME</ID>
+      <Name>TYPE NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fa379ebf-08e2-4a02-a2db-0ba5ed99e1a4">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c4921ec-1529-4661-b064-a685a27172dc">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>TYPE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e7c3f68a-37ad-4749-9f30-5142de2f13e9">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="17ba79e1-e42a-4c30-b0e6-987c9164be91">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>TYPE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="dd186ff7-707d-4658-b644-c3eb0025f5ff">
+      <ID>STATUS NAME</ID>
+      <Name>STATUS NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="95a9b014-f301-4ddc-8ca8-1ea1b8073e14">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b2032a76-0fce-431a-95de-3b2f9fd2f152">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>STATUS_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bc86db65-34e0-4717-9f00-05bfe7825b80">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4734109e-3fc7-4805-a307-5250278f8726">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>STATUS_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="d36bc120-732b-4f53-822d-4ad534c0ae6a">
+      <ID>EMPLOYMENT START DATE</ID>
+      <Name>EMPLOYMENT START DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46bc6d37-2cbf-4a01-8223-1660bb15f037">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd046491-58b7-48d4-b266-893f9c74eb9d">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>EMPLOYMENT_START_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="054fc6e7-9bc1-48cf-8211-8250f2c0674c">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1efae75d-f8e1-4027-841c-1075b096e48b">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>EMPLOYMENT_START_DATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="cd53ff7f-f9f5-4a4a-a2f6-f1018632cf9d">
+      <ID>EMPLOYMENT END DATE</ID>
+      <Name>EMPLOYMENT END DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3c6f2498-d6d7-4eea-91c2-3609eae4a0d8">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d1fe903-a31e-460f-a3a8-49c311c9ba27">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>EMPLOYMENT_END_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="24e6fbf8-24bc-4cbf-8f27-db776de5ac7a">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="498ddae8-6bf4-4f37-a77d-584bae25dedb">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>EMPLOYMENT_END_DATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="ffcd425b-059f-479f-b889-615e7ef99a97">
+      <ID>FULL WEEK FLG</ID>
+      <Name>FULL WEEK FLG</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="40fc9e5a-12b9-468e-baa1-da8237110027">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2d9d30d2-8e09-4242-8af0-752bc14a5adf">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>FULL_WEEK_FLG</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="fd6c7b11-9f52-4296-84c4-681c74d97873">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fb28e841-f43b-4f5a-996b-dd70d9a1bc1d">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>FULL_WEEK_FLG</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="f406fa66-6ec3-40f6-b5a1-cb46edf11e8e">
+      <ID>LINE PERSON FLG</ID>
+      <Name>LINE PERSON FLG</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3dd89d3c-9656-4231-aa7c-6ed74cbf19d1">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7bb59318-0aba-49d0-8bb1-6980c9f73549">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>LINE_PERSON_FLG</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="572aaed4-762d-45c6-b4cf-2e139c1b9456">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="686c68ed-c957-4c02-a71a-e1cbf492f75e">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>LINE_PERSON_FLG</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="dec53acc-e4a7-4794-a6bd-5314c46ccaec">
+      <ID>CAREER LEVEL NAME</ID>
+      <Name>CAREER LEVEL NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3f69e00-09cc-40ca-bd6f-17114cb0b7bf">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="36f044d3-eae6-4bf4-b1d4-081bee036210">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>CAREER_LEVEL_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="48e67309-4f58-4567-90e1-c5eff8627960">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6fbdaf65-224d-46c8-a298-06c849afb777">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>CAREER_LEVEL_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+    </Attribute>
+    <Attribute dwd:design-time-name="3600727f-bb7b-4a31-b95a-554aaeb70864">
+      <ID>FULL NAME</ID>
+      <Name>FULL NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9d53433e-eae1-4b38-9109-52bbf61522be">
+          <DataType>WChar</DataType>
+          <DataSize>152</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="121427c0-ece3-4e80-90a4-4c41b0741e1b">
+            <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+            <ColumnID>FULL_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ae726f00-e173-43fb-9d24-c6096aa6895a">
+        <DataType>WChar</DataType>
+        <DataSize>152</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7e3f72d4-6095-445f-97d4-ad7788677f96">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>FULL_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="d1eb4402-c9ad-41dd-b39c-9e4a0f8113b7">
+        <DataType>WChar</DataType>
+        <DataSize>152</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1f4b2a39-52ac-42e3-8fda-cc9f80c7269c">
+          <TableID>dbo_EMPLOYEE_CAREER_LEVEL_VW</TableID>
+          <ColumnID>FULL_NAME</ColumnID>
+        </Source>
+      </ValueColumn>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="9a3d414b-964d-403a-b14f-0f7e02c09378">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="6edb2ae5-d503-4a77-98aa-df45f2fe5875">
+          <ID>OFFICE NAME</ID>
+          <Name>OFFICE NAME</Name>
+          <SourceAttributeID>OFFICE NAME</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cec6f2a6-ed20-4616-89ee-651b624702ff">
+          <ID>SOLUTION AREA NAME</ID>
+          <Name>SOLUTION AREA NAME</Name>
+          <SourceAttributeID>SOLUTION AREA NAME</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5c40e2c5-d72b-4d78-8bf0-cb3ba18ead51">
+          <ID>CAREER LEVEL NAME</ID>
+          <Name>CAREER LEVEL NAME</Name>
+          <SourceAttributeID>CAREER LEVEL NAME</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2482d7a6-d17a-44fa-9824-f7dbcc3d4ce8">
+          <ID>FULL NAME</ID>
+          <Name>FULL NAME</Name>
+          <SourceAttributeID>FULL NAME</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="58a1fb60-e1d4-4c6d-9236-9dedf5b22634">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5f198215-4efd-49e5-93e7-037cf776c85e" />
+  </ProactiveCaching>
+</Dimension>

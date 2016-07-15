@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "WMP BI Repository", "WMP BI Repository.dwproj", "{ACDDF614-BD45-41C4-A106-22834BEA8E42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+		Local|Default = Local|Default
+		Production|Default = Production|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACDDF614-BD45-41C4-A106-22834BEA8E42}.Development|Default.ActiveCfg = Development
+		{ACDDF614-BD45-41C4-A106-22834BEA8E42}.Development|Default.Build.0 = Production
+		{ACDDF614-BD45-41C4-A106-22834BEA8E42}.Development|Default.Deploy.0 = Production
+		{ACDDF614-BD45-41C4-A106-22834BEA8E42}.Local|Default.ActiveCfg = Local
+		{ACDDF614-BD45-41C4-A106-22834BEA8E42}.Local|Default.Deploy.0 = Local
+		{ACDDF614-BD45-41C4-A106-22834BEA8E42}.Production|Default.ActiveCfg = Production
+		{ACDDF614-BD45-41C4-A106-22834BEA8E42}.Production|Default.Deploy.0 = Production
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

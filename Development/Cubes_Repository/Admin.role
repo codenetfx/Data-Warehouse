@@ -1,0 +1,27 @@
+<Role xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="03015c33-756a-4bad-acec-2a6525f6fbd6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Role</ID>
+  <Name>Admin</Name>
+  <CreatedTimestamp>2010-05-03T19:17:41Z</CreatedTimestamp>
+  <LastSchemaUpdate>2011-04-20T17:35:57Z</LastSchemaUpdate>
+  <Description>Manages structure and calculations.</Description>
+  <Members>
+    <Member>
+      <Name>WMP\mrager</Name>
+    </Member>
+    <Member>
+      <Name>WMP\cteter</Name>
+    </Member>
+    <Member>
+      <Name>WMP\dmieszala</Name>
+    </Member>
+    <Member>
+      <Name>WMP\ad_cteter</Name>
+    </Member>
+    <Member>
+      <Name>WMP\janderson</Name>
+    </Member>
+    <Member>
+      <Name>WMP\sa_pps</Name>
+    </Member>    
+  </Members>
+</Role>
